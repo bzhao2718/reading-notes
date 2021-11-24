@@ -1,2 +1,2 @@
 # reading-notes
-Temporarily storing my reading notes and not for public use.
+Temporary reading notes and not for public use.
