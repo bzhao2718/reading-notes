@@ -1,4 +1,4 @@
-### **2021-11** (9)  
+### **2021-11** (11)  
 - 2021-11-16 [data-structure-algo-03](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-03/)  
 - 2021-11-16 [data-structure-algo-02](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-02/)  
 - 2021-11-15 [Data Structure And Algorithms Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-01/)  
@@ -7,16 +7,36 @@
 - 2021-11-08 [JPA Basics Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/JPABasicsNotes/JPA-basics-notes-01/)  
 - 2021-11-08 [JPA Basics Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/MyBatisBasicsNotes/MyBatis-basics-ref-01/)  
 - 2021-11-08 [JPA One to One Relationship](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/JPABasicsNotes/JPA-basics-1to1-mapping/)  
+- 2021-11-07 [iClub Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/iClubNotes/iClub-note-01/)  
 - 2021-11-05 [Software Engineer Reading Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/software-dev-notes-01/)  
+- 2021-11-01 [Spring In Action Notes (7)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-07/)  
   
   
-### **2021-01** (6)  
+### **2021-10** (6)  
+- 2021-10-29 [Spring In Action Notes (6)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-06/)  
+- 2021-10-29 [Spring In Action Notes (5)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-05/)  
+- 2021-10-28 [Spring In Action Notes (4)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-04/)  
+- 2021-10-28 [Spring In Action Notes (3)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-03/)  
+- 2021-10-27 [Spring In Action Notes (2)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-02/)  
+- 2021-10-26 [Spring In Action Reading Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-01/)  
+  
+  
+### **2021-07** (1)  
+- 2021-07-16 [](https://bzhao2718.github.io/reading-notes/cqNotes/Facebook%20Data%20Science%20Interview%20Questions%20and%20Solutions/)  
+  
+  
+### **2021-01** (11)  
 - 2021-01-01 [cq_info_theory](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq-info-theory/)  
+- 2021-01-01 [cq_cnn_intro](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_cnn_intro/)  
 - 2021-01-01 [cq_ml_math](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_ml_math/)  
 - 2021-01-01 [cq_linear_regr](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_linear_regr/)  
 - 2021-01-01 [cq_logistic_regr](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_logistic_regr/)  
 - 2021-01-01 [cq_loss_function](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_loss_function/)  
+- 2021-01-01 [cq_ml](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_ml/)  
 - 2021-01-01 [cq_ml_common](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_ml_common/)  
+- 2021-01-01 [cq_ml_funcs](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_ml_funcs/)  
+- 2021-01-01 [cq_ml_training](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_ml_training/)  
+- 2021-01-01 [cq_transformer_intro](https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_transformer_%20intro/)  
   
   
 ### **2020-01** (9)  
@@ -25,8 +45,8 @@
 - 2020-01-01 [Hexo Setup Instructions](https://bzhao2718.github.io/reading-notes/samples/ins_hexo_setup/)  
 - 2020-01-01 [Butterfly Markdown Example (1)](https://bzhao2718.github.io/reading-notes/samples/SubFolder/butterfly_markdown_example-01/)  
 - 2020-01-01 [Posts Statistics Example](https://bzhao2718.github.io/reading-notes/samples/SubFolder/hexo_stats_chart/)  
-- 2020-01-01 [Math Equations Test](https://bzhao2718.github.io/reading-notes/samples/SubFolder/math_test/)  
 - 2020-01-01 [Markmap Test](https://bzhao2718.github.io/reading-notes/samples/SubFolder/markmap_test/)  
+- 2020-01-01 [Math Equations Test](https://bzhao2718.github.io/reading-notes/samples/SubFolder/math_test/)  
 - 2020-01-01 [Pandoc Instructions General](https://bzhao2718.github.io/reading-notes/samples/SubFolder/SubSubFolder/ins_pandoc_general/)  
 - 2020-01-01 [Check Attachments](https://bzhao2718.github.io/reading-notes/samples/SubFolder/check-attachements/)  
   

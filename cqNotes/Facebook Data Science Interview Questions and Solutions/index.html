@@ -1,0 +1,1013 @@
+<!DOCTYPE html><html class="hide-aside" lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ReadingNotes | ReadingNotes</title><meta name="author"><meta name="copyright"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Interview Query Blog                                       Home     Problems     Course     Pricing     Blog                       F">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ReadingNotes">
+<meta property="og:url" content="https://bzhao2718.github.io/reading-notes/cqNotes/Facebook%20Data%20Science%20Interview%20Questions%20and%20Solutions/index.html">
+<meta property="og:site_name" content="ReadingNotes">
+<meta property="og:description" content="Interview Query Blog                                       Home     Problems     Course     Pricing     Blog                       F">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png">
+<meta property="article:published_time" content="2021-07-16T19:07:24.881Z">
+<meta property="article:modified_time" content="2021-07-16T19:07:45.063Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png"><link rel="shortcut icon" href="/reading-notes/img/favicon.png"><link rel="canonical" href="https://bzhao2718.github.io/reading-notes/cqNotes/Facebook%20Data%20Science%20Interview%20Questions%20and%20Solutions/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/reading-notes/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/reading-notes/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ReadingNotes',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-16 14:07:45'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script async src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/carousel-touch.min.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/archives/"><div class="headline">Articles</div><div class="length-num">38</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/reading-notes/">ReadingNotes</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">No title</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-07-16T19:07:24.881Z" title="Created 2021-07-16 14:07:24">2021-07-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-07-16T19:07:45.063Z" title="Updated 2021-07-16 14:07:45">2021-07-16</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>25min</span></span></div></div></div><article class="post-content" id="article-container">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header">
+    <div class="outer site-nav-main nav-post-title-active">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left-wrapper">
+        <div class="site-nav-left">
+                <a class="site-nav-logo" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/blog">Interview Query Blog</a>
+            <div class="site-nav-content">
+                    <ul class="nav">
+    <li class="nav-home"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com">Home</a></li>
+    <li class="nav-problems"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/tryquestion">Problems</a></li>
+    <li class="nav-course"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/courses/data-science-course">Course</a></li>
+    <li class="nav-pricing"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/pricing">Pricing</a></li>
+    <li class="nav-blog"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/blog">Blog</a></li>
+</ul>
+
+                    <span class="nav-post-title dash">Facebook Data Science Interview Questions and Solutions</span>
+            </div>
+        </div>
+    </div>
+    <div class="site-nav-right">
+            <ul class="nav">
+    <li class="nav-success-stories"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/tag/interviews/">Success Stories</a></li>
+    <li class="nav-company-guides"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/tag/company/">Company Guides</a></li>
+    <li class="nav-interviewing-guides"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/tag/interviewing-guides/">Interviewing Guides</a></li>
+</ul>
+
+
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+    </div>
+</nav>
+    </div>
+</div></header>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-company ">
+
+            <header class="post-full-header">
+
+                <section class="post-full-tags">
+                    <a href="/tag/company/">Company Guides</a>
+                </section>
+
+                <h1 id="post-title" class="post-full-title">Facebook Data Science Interview Questions and Solutions</h1>
+
+                <p class="post-full-custom-excerpt">How would you create a process to identify fake news postings on Facebook?</p>
+
+                <div class="post-full-byline"> 
+
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    <img class="author-profile-image" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/content/images/size/w100/2020/03/jays_face.jpg" alt="Jay Feng">
+                                    <div class="author-info">
+                                        <div class="bio">
+                                            <h2>Jay Feng</h2>
+                                            <p>Jay has worked in data science in Silicon Valley for the past five years before starting Interview Query, a data science interview prep newsletter.</p>
+                                            <p><a href="/author/jay/">More posts</a> by Jay Feng.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="/author/jay/" class="author-avatar">
+                                    <img class="author-profile-image" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/content/images/size/w100/2020/03/jays_face.jpg" alt="Jay Feng">
+                                </a>
+
+                            </li>
+                        </ul>
+
+                        <section class="post-full-byline-meta">
+                            <h4 class="author-name"><a href="/author/jay/">Jay Feng</a></h4>
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-04-17">17 Apr 2020</time>
+                                <span class="byline-reading-time"><span class="bull">•</span> 14 min read</span>
+                            </div>
+                        </section>
+                    </section>
+
+                </div>
+            </header>
+
+            <figure class="post-full-image">
+                <img srcset="/content/images/size/w300/2020/04/facebook_logo_blog.jpg 300w,
+                            /content/images/size/w600/2020/04/facebook_logo_blog.jpg 600w,
+                            /content/images/size/w1000/2020/04/facebook_logo_blog.jpg 1000w,
+                            /content/images/size/w2000/2020/04/facebook_logo_blog.jpg 2000w" sizes="(max-width: 800px) 400px,
+                        (max-width: 1170px) 1170px,
+                            2000px" src="/content/images/size/w2000/2020/04/facebook_logo_blog.jpg" alt="Facebook Data Science Interview Questions and Solutions">
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <h2 id="introduction">Introduction</h2><p>The Facebook data science interview consists of multiple technical and business case questions, heavily focused on applying technical knowledge to business case scenarios. Facebook data scientists are heavily expected to work cross functionally and explore, analyze and aggregate large data sets to provide actionable information.</p><h2 id="facebook-interview-questions">Facebook Interview Questions</h2><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.interviewquery.com/blog-big-tech-hiring-process/">Facebook data science interview</a> questions generally fall into four main categories:</p><ul><li>Product and business sense</li><li>Technical data analysis (SQL, pandas) </li><li>Statistics and probability </li><li>Modeling knowledge and applying data </li></ul><p>The technical screen will always consist of one product question and one data analysis question. Be sure to prepare for both in order to pass onto the onsite. </p><h3 id="facebook-case-study-interview-questions">Facebook Case Study Interview Questions</h3><blockquote>See our Product Sense course <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/course/data-science-course/lessons/product-sense">here</a>.</blockquote><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/post-composer-drop">Q1:</a> Let’s say that on Facebook composer, the posting tool, drops from 3% posts per user last month to 2.5% post per user today.</strong></p><p><strong>How would you investigate what happened?</strong></p><p><strong>Let’s say the drop is in photo posts. What would you investigate now?</strong></p><p>The question states the drop is from 3% a month ago to 2.5% today. The first thing we have to do is <strong>clarify the context around the problem</strong> before jumping to conclusions about metrics. Is today a weekday and one month from today a weekend so users are posting less? Is there a special event or seasonality? Is this an on-going trend downward or a one time occurence spike downwards?</p><p>The second main part is understanding the metric itself. What exactly drove the decrease: was it the <strong>number of users that increased or the number of posts that decreased</strong>? Likely the interviewer will ask you to jump into one or both of the metrics to dive into what exactly could have caused the decrease.</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/post-composer-drop"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Post Composer Drop — Interview Query product problem</div><div class="kg-bookmark-description">Let’s say that on Facebook composer, the posting tool, drops from 3% posts per user last month to 2.5% post per user today. How would you investigate what happened?Let’s say</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Check out the full solution here.</figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/threaded-comments">Q2:</a></strong> <strong>Let’s say you’re working on Facebook Groups. A product manager decides to add threading to comments on group posts. We see comments per user increase by 10% but posts go down 2%. </strong></p><p><strong>Why would that be? What metrics would prove your hypotheses?</strong></p><p>Threading restructures the flow of comments so that, instead of responding to the post, users can now respond to individual comments beneath the post. </p><p>What effect might this have on a push notification ecosystem?</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/threaded-comments"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Threaded Comments — Interview Query product problem</div><div class="kg-bookmark-description">Let’s say you’re working on Facebook Groups. A product manager decides to add threading to comments on group posts. We see comments per user increase by 10% but posts go down</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>See the rest of the solution here.</figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/celebrity-mentions">Q3:</a> Let's say you're a product data scientist at Facebook. Facebook is rolling out a new feature called "Mentions" which is an app specifically for celebrities on Facebook to connect with their fans.</strong></p><p><strong>How would you measure the health of the Mentions app? And if a celebrity starts using Mentions and begins interacting with their fans more, what part of the increase can be attributed to a celebrity using Mentions versus what part is just a celebrity wanting to get more involved in fan engagement?</strong></p><p>Let's first break down some structure on what the interviewer is looking for. Whenever we're given these open-ended product questions, it makes sense to think about structuring the questions with well-defined objectives so we're not switching between different answers.</p><p>1. Did you begin by stating what the goals of the feature are before jumping into defining metrics? What is the point of the Mentions feature?</p><p>2. Are your answers structured or do you tend to talk about random points?</p><p>3. Are the metrics definitions specific or are they generalized in an example like “I would find out if people used Mentions frequently”? </p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/celebrity-mentions"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Celebrity Mentions — Interview Query product problem</div><div class="kg-bookmark-description">Let&amp;#39;s say you&amp;#39;re a product data scientist at Facebook. Facebook is rolling out a new feature called &amp;#34;Mentions&amp;#34; which is an app specifically for celebrities on Facebook</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Double check your answer here.</figcaption></figure><p><strong>Q4: How can Facebook figure out when users falsify their attended schools?</strong></p><p><strong>Q5: If 70% of Facebook users on iOS use Instagram, but only 35% of Facebook users on Android use Instagram, how would you investigate the discrepancy?</strong></p><h3 id="facebook-sql-interview-questions">Facebook <a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.interviewquery.com/blog-sql-interview-questions/">SQL</a> Interview Questions</h3><blockquote>For more step-by-step instruction, walk through our <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/course/data-science-course/lessons/sql">SQL course</a>.</blockquote><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/comments-histogram">Q1:</a> Write a SQL query to create a histogram of number of comments per user in the month of January 2020. Assume bin buckets class intervals of one.</strong></p><!--kg-card-begin: markdown--><pre><code>users table
+
+| columns         | type     |
+|-----------------|----------|
+| id              | integer  |
+| name            | string   |
+| created_at      | datetime |
+| neighborhood_id | integer  |
+| mail            | string   |
+
+
+comments table
+
+| columns    | type     |
+|------------|----------|
+| user_id    | integer  |
+| body       | text     |
+| created_at | datetime |
+
+
+Output:
+
+| columns       | type |
+|---------------|------|
+| comment_count | int  |
+| frequency     | int  |
+
+</code></pre>
+<!--kg-card-end: markdown--><p>Since a histogram is just a display of frequencies of each user, all we really need to do is get the<strong> total count of user comments in the month of January 2020 for each user,</strong> and then group by that count.</p><p>Essentially we are then getting the frequency of each user comment count.</p><p>For example: If 5 users comment once, 6 users comment twice, and 2 users commented three times in January 2020, our end table should look like this:</p><!--kg-card-begin: markdown--><pre><code>| Comment Frequency | Count |
+|-------------------|-------|
+| 1                 | 5     |
+| 2                 | 6     |
+| 3                 | 2     |
+
+</code></pre>
+<!--kg-card-end: markdown--><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/comments-histogram"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Comments Histogram — Interview Query sql problem</div><div class="kg-bookmark-description">users table columnstype idinteger namestring created_atdatetime neighborhood_idinteger mailstring comments table columnstype user_idinteger bodytext created_atdatetime Write</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Try your answer <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/comments-histogram">here.</a>&nbsp;</figcaption></figure><p><strong>Q2: </strong></p><!--kg-card-begin: markdown--><pre><code>events table
+
+| column     | type     |
+|------------|----------|
+| id         | integer  |
+| user_id    | integer  |
+| created_at | datetime |
+| action     | string   |
+| url        | string   |
+| platform   | string   |
+
+</code></pre>
+<!--kg-card-end: markdown--><p><strong>In the table above, column <em>`action`</em> represents either ('post_enter', 'post_submit', 'post_canceled') for when a user starts a post (enter), ends up canceling it (cancel), or ends up posting it (submit).</strong></p><p><strong>Write a query to get the post success rate for each day in the month of January 2020.</strong></p><!--kg-card-begin: markdown--><pre><code>Sample:
+
+| user_id | created_at | event_name    |
+|---------|------------|---------------|
+| 123     | 2019-01-01 | post_enter    |
+| 123     | 2019-01-01 | post_submit   |
+| 456     | 2019-01-02 | post_enter    |
+| 456     | 2019-01-02 | post_canceled |
+
+
+Output:
+
+| column            | type     |
+|-------------------|----------|
+| dt                | datetime |
+| post_success_rate | float    |
+
+</code></pre>
+<!--kg-card-end: markdown--><p>Let's see if we can clearly define the metrics we want to calculate before just jumping into the problem. We want <strong>post success rate for each day over the past week</strong>.</p><p>To get that metric let's assume post success rate can be defined as:</p><p><strong>(total posts created) / (total posts entered)</strong></p><p>Additionally since the success rate must be broken down by day, we must make sure that a post that is entered <strong>must be completed on the same day</strong>.</p><p>Cool, now that we have these requirements, it's time to calculate our metrics. We know we have to GROUP BY the date to get each day's posting success rate. We also have to break down how we can compute our two metrics of <em>total posts entered</em> and <em>total posts actually created</em>.</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/post-success"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Post Success — Interview Query sql problem</div><div class="kg-bookmark-description">events&nbsp;table columntype idinteger user_idinteger created_atdatetime actionstring urlstring platformstring In the table above,</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>See the full solution here.</figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/search-ctr">Q3:</a> You're given a table that represents search results from searches on Facebook. The `query` column is the search term, `position` column represents each position the search result came in, and the `rating` column represents the human rating from 1 to 5 where 5 is high relevance and 1 is low relevance.</strong></p><p><strong>Each row in the `search_events` table represents a single search with the `has_clicked` column representing if a user clicked on a result or not. We have a hypothesis that the CTR is dependent on the search result rating.</strong></p><!--kg-card-begin: markdown--><pre><code>`search_results` table
+
+| column    | type    |
+|-----------|---------|
+| query     | varchar |
+| result_id | integer |
+| position  | integer |
+| rating    | integer |
+
+
+`search_events` table
+
+| column      | type    |
+|-------------|---------|
+| search_id   | integer |
+| query       | varchar |
+| has_clicked | boolean |
+
+</code></pre>
+<!--kg-card-end: markdown--><p><strong>Write a query to return data to support or disprove this hypothesis.</strong></p><p>This question requires us to formulaicly do two things: create a metric that can analyze a problem that we face and then actually compute that metric.</p><p>Let's think about the data we want to display to prove or disprove the hypothesis. Our output metric is CTR. If CTR is high when search result ratings are high and CTR is low when the search result ratings are low, then our hypothesis is proven. However if the opposite is true, CTR is low when the search result ratings are high, or there is no proven correlation between the two, then our hypothesis is not proven.</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/search-ctr"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Search CTR — Interview Query sql problem</div><div class="kg-bookmark-description">`search_results` table columntype queryvarchar result_idinteger positioninteger ratinginteger `search_events` table columntype search_idinteger queryvarchar has_clickedboolean You&amp;#39;re</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Try out your solution here.&nbsp;</figcaption></figure><h3 id="facebook-statistics-and-probability-interview-questions">Facebook Statistics and <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/blog-probability-interview-questions/">Probability</a> Interview Questions</h3><blockquote>For more guidance, here's our <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/courses/data-science-course">statistics and probability courses</a>.</blockquote><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/time-on-fb-distribution">Q1:</a> What do you think the distribution of time spent per day on Facebook looks like? What metrics would you use to describe that distribution?</strong></p><p>Having the vocabulary to describe a distribution is an important skill as a data scientist when it comes to communicating ideas to your peers. There are 4 important concepts, with supporting vocabulary, that you can use to structure your answer to a question like this. These are:</p><ol><li><em>Center (mean, median, mode)</em></li><li><em>Spread (standard deviation, inter quartile range, range)</em></li><li><em>Shape (skewness, kurtosis, uni or bimodal)</em></li><li><em>Outliers (Do they exist?)</em></li></ol><p>In terms of the distribution of time spent per day on Facebook (FB), one can imagine there may be two groups of people on Facebook:</p><ol><li>People who scroll quickly through their feed and don’t spend too much time on FB.</li><li>People who spend a large amount of their social media time on FB.</li></ol><p>Based on this, what kind of claims could we make about the distribution of time spent on FB? </p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/time-on-fb-distribution"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Time on FB distribution — Interview Query statistics problem</div><div class="kg-bookmark-description">What do you think the distribution of time spent per day on Facebook looks like? What metrics would you use to describe that distribution?</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Check out the full solution <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/time-on-fb-distribution">here</a>.</figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/ad-raters">Q2:</a> Let's say we use people to rate ads.</strong></p><p><strong>There are two types of raters. Random and independent from our point of view:</strong></p><ul><li><strong>80% of raters are careful and they rate an ad as good (60% chance) or bad (40% chance).</strong></li><li><strong>20% of raters are lazy and they rate every ad as good (100% chance).</strong></li></ul><p><strong>1. Suppose we have 100 raters each rating one ad independently. What's the expected number of good ads?</strong></p><p><strong>2. Now suppose we have 1 rater rating 100 ads. What's the expected number of good ads?</strong></p><p><strong>3. Suppose we have 1 ad, rated as bad. What's the probability the rater was lazy?</strong></p><p>Keep in mind that in order for the rater to rate an ad, the rater must first be selected. So the event that the rater is selected happens first, then the rating happens. How would you represent this fact arthmetically using basic properties of probability?</p><blockquote>Hint: If we only have one rater, we don't need to test that rater's personality more than once.</blockquote><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/ad-raters"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Ad Raters — Interview Query probability problem</div><div class="kg-bookmark-description">Let&amp;#39;s say we use people to rate ads.There are two types of raters. Random and independent from our point of view: 80% of raters are careful and they rate an ad as good (60% chance)</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>See the full solution here.&nbsp;</figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/three-zebras">Q3:</a> Three zebras are chilling in the desert. Suddenly a lion attacks.</strong></p><p><strong>Each zebra is sitting on a corner of an equally length triangle. Each zebra randomly picks a direction and only runs along the outline of the triangle to either edge of the triangle.</strong></p><p><strong>What is the probability that none of the zebras collide?</strong></p><p>There are two scenarios in which the zebras do not collide: if they all move clockwise or if they all move counterclockwise.</p><p>How do we calculate the probability that an individual zebra chooses to move clockwise or counterclockwise? How can we use this individual probability to calculate the probability that <strong>all </strong>zebras choose to move in the same direction?</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/three-zebras"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Three Zebras — Interview Query probability problem</div><div class="kg-bookmark-description">Three zebras are chilling in the desert. Suddenly a lion attacks.Each zebra is sitting on a corner of an equally length triangle. Each zebra randomly picks a direction and only runs</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Check out the full solution here.</figcaption></figure><h2 id="machine-learning-interview-questions"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/blog-machine-learning-interview-questions/">Machine Learning Interview Questions</a></h2><p></p><p></p><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/active-user-probability">Q1:</a> How would you test whether having more friends now increases the probability that a Facebook member is still an active user after 6 months?</strong></p><p>Since we are interested in whether or not someone will be an active user in 6 months or not, we can test this assumption by first looking at the existing data. One way to do so is to <strong>put users into buckets determined by friend size six months ago</strong> and then look at their activity over the next six months.</p><p>If we set a metric to define "active user", such as if they logged in X number of times, posted once, etc..., we can then just compute the averages on these metrics across the buckets to determine if more friends is equivalent to higher engagement metrics.</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/active-user-probability"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Active User Probability — Interview Query machine learning problem</div><div class="kg-bookmark-description">How would you test whether having more friends now increases the probability that a Facebook member is still an active user after 6 months?</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Find the full solution <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/active-user-probability">here.</a></figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/parents-joining-teens">Q2:</a> &nbsp;How you would evaluate the effect on engagement of teenage users when their parents join Facebook?</strong></p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/parents-joining-teens"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Parents Joining Teens — Interview Query machine learning problem</div><div class="kg-bookmark-description">Let&amp;#39;s say you&amp;#39;re a data scientist at Facebook. How you would evaluate the effect on engagement of teenage users when their parents join Facebook?</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Check out our video solution <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/parents-joining-teens">here.</a>&nbsp;</figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/newsfeed-model">Q3:</a> We're given different posts such as your friends baby pictures, Buzzfeed Tasty videos, and birthday posts and have to decide how to rank them.</strong></p><p><strong>How would you optimize the ratio of public versus private content? How would you build a model, what features would you use, and what metrics would you track?</strong></p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/newsfeed-model"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Newsfeed Model — Interview Query machine learning problem</div><div class="kg-bookmark-description">We&amp;#39;re given different posts such as your friends baby pictures, Buzzfeed Tasty videos, and birthday posts and have to decide how to rank them.How would you optimize the ratio</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Video solution <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/newsfeed-model">here.</a></figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/mapping-nicknames">Q4:</a> Let's say that you're a data scientist working for Facebook.</strong></p><p><strong>You've been asked to generate a machine learning model that can map the nicknames of people using Facebook.</strong></p><p><strong>How do you go about designing this model?</strong></p><p></p><blockquote>Our ML course can be found <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/course/data-science-course/lessons/modeling">here</a>. </blockquote><h3 id="facebook-system-design-interview-questions">Facebook <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/course/data-science-course/lessons/ml-system-design">System Design</a> Interview Questions</h3><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/restaurant-recommender">Q1:</a> How would you build a restaurant recommender on Facebook? Start with how you would go about getting this data, then talk about how you would build it.</strong></p><p><strong>What are some downfalls / worries about adding this feature to Facebook?</strong></p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/restaurant-recommender"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Restaurant Recommender — Interview Query ml system design problem</div><div class="kg-bookmark-description">How would you build a restaurant recommender on Facebook? Start with how you would go about getting this data, then talk about how you would build it.What are some downfalls / worries</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Compare your answer to the video solution <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/restaurant-recommender">here.</a></figcaption></figure><p><strong>Q2: How would you build the recommendation algorithm for type-ahead search for Netflix?</strong></p><p>Let's think about a simple use case to start out with. Let's say that we type in the word "hello" for the beginning of a movie.</p><p>If we typed in h-e-l-l-o, then a suitable suggestion might be a movie like "Hello Sunshine" or a spanish movie named "Hola".</p><p>Let's now move on to an MVP within the scope. We can begin to think of the solution in the form of a <strong>prefix table</strong>.</p><p>How a prefix table works is that your prefix, that is your input string, outputs your output string, one at a time to start with. For an mvp, we could input a string and output a suggestion string with added fuzzy matching and context matching.</p><p>But now how do we recommend a certain movie?</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/type-ahead-search"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Type-ahead Search — Interview Query ml system design problem</div><div class="kg-bookmark-description">How would you build the recommendation algorithm for type-ahead search for Netflix?</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Check out the full solution <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/type-ahead-search">here.</a></figcaption></figure><h3 id="facebook-coding-interview-questions">Facebook Coding Interview Questions</h3><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/friendship-timeline">Q1:</a> There are two lists of dictionaries representing friendship beginnings and endings: <em>friends_added</em> and <em>friends_removed. </em>Each dictionary contains the <em>user_ids </em>and<em> created_at </em>time of the friendship beginning /ending <em>. </em><br><br>Write a function to generate an output which lists the pairs of friends with their corresponding timestamps of the friendship beginning and then the timestamp of the friendship ending.<br><br><em>Note: There can be multiple instances over time when two people became friends and unfriended; only output lists when a corresponding friendship was removed.</em></strong></p><!--kg-card-begin: markdown--><pre><code>Example input:
+
+friends_added = [{'user_ids': [1, 2], 'created_at': '2020-01-01'},
+                 {'user_ids': [3, 2], 'created_at': '2020-01-02'},
+                 {'user_ids': [2, 1], 'created_at': '2020-02-02'},
+                 {'user_ids': [4, 1], 'created_at': '2020-02-02'}]
+                 
+friends_removed = [{'user_ids': [2, 1], 'created_at': '2020-01-03'},
+                   {'user_ids': [2, 3], 'created_at': '2020-01-05'},
+                   {'user_ids': [1, 2], 'created_at': '2020-02-05'}]
+                   
+</code></pre>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><pre><code>Output:
+
+friendships = [{
+    'user_ids': [1, 2],
+    'start_date': '2020-01-01',
+    'end_date': '2020-01-03'
+  },
+  {
+    'user_ids': [1, 2],
+    'start_date': '2020-02-02',
+    'end_date': '2020-02-05'
+  },
+  {
+    'user_ids': [2, 3],
+    'start_date': '2020-01-02',
+    'end_date': '2020-01-05'
+  },
+]</code></pre>
+<!--kg-card-end: markdown--><p>Note that you are only looking for friendships that have an end date. Because of this, every friendship that will be in our final output is contained within the friends_removed list. So if you start by iterating through the friends_removed dictionary, you will already have the id pair and the end date of each listing in our final output - you just need to find the corresponding start date for each end date.</p><p>The friends_added and friends_removed dictionaries are already sorted by date. Because of this, you can be sure that as long as you iterate from the top through both, you will find the correct pairings of dates since each end date can only have one corresponding start date appearing before it in time.</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/friendship-timeline"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Friendship Timeline — Interview Query python problem</div><div class="kg-bookmark-description">There are two lists of dictionaries representing friendship beginnings and endings:&nbsp;friends_added and friends_removed.&nbsp;Each dictionary contains the user_ids and created_at</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>See the full solution here.</figcaption></figure><p>Q2: In data science, there exists the concept of stemming, which is the heuristic of chopping off the end of a word to clean and bucket it into an easier feature set.</p><p>Given a dictionary consisting of many roots and a sentence, stem all the words in the sentence with the root forming it. If a word has many roots can form it, replace it with the root with the shortest length.</p><p>Example:</p><!--kg-card-begin: markdown--><pre><code>Input: 
+roots = ["cat", "bat", "rat"]
+sentence = "the cattle was rattled by the battery"
+
+Output: "the cat was rat by the bat"</code></pre>
+<!--kg-card-end: markdown--><p>At first it simply looks like we can just loop through each word and check if the root exists in the word and if so, replace the word with the root. But since we are technically stemming the words we have to make sure that the roots are equivalent to the word at it's prefix rather than existing anywhere within the word.</p><p>We're given a dictionary of roots with a sentence string. Given we have to check each word, let's try creating a function that takes a word and returns the existing word if it doesn't match a root, or return the root itself.</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/replace-words-with-stems"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Replace words with stems — Interview Query python problem</div><div class="kg-bookmark-description">In data science, there exists the concept of stemming, which is the heuristic of chopping off the end of a word to clean and bucket it into an easier feature set. Given a dictionary</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://www.interviewquery.com/img/iq-logo.png"></div></div></a><figcaption>Run your solution here.</figcaption></figure><p><strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.interviewquery.com/questions/good-grades-and-favorite-colors">Q3:</a> You're given a dataframe of students:</strong></p><!--kg-card-begin: markdown--><pre><code>| name            | age | favorite_color | grade |
+|-----------------|-----|----------------|-------|
+| Tim Voss        | 19  | red            | 91    |
+| Nicole Johnson  | 20  | yellow         | 95    |
+| Elsa Williams   | 21  | green          | 82    |
+| John James      | 20  | blue           | 75    |
+| Catherine Jones | 23  | green          | 93    |
+
+</code></pre>
+<!--kg-card-end: markdown--><p><strong>Write a function to select only the rows where the student's favorite color is green or red and their grade is above 90.</strong></p><!--kg-card-begin: markdown--><pre><code>import pandas as pd
+
+students = {"name" : ["Tim Voss", "Nicole Johnson", "Elsa Williams", "John James", "Catherine Jones"], "age" : [19, 20, 21, 20, 23], "favorite_color" : ["red", "yellow", "green", "blue", "green"], "grade" : [91, 95, 82, 75, 93]}
+
+students_df = pd.DataFrame(students)</code></pre>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><pre><code>Output:
+
+| name            | age | favorite_color | grade |
+|-----------------|-----|----------------|-------|
+| Tim Voss        | 19  | red            | 91    |
+| Catherine Jones | 23  | green          | 93    |
+
+</code></pre>
+<!--kg-card-end: markdown-->
+                </div>
+
+            </section>
+
+            
+                <section class="subscribe-form">
+    <h3 class="subscribe-form-title">Want more interview questions?</h3>
+    <p class="subscribe-form-description">Practice data science interview questions from top tech companies delivered right to your inbox each weekday</p>
+    <form id="iq-subscribe-form">
+        <div class="form-group">
+            <input id="footer-subscribe-email" class="subscribe-email" type="email" name="email" data-members-email="" placeholder="Enter your email..." autocomplete="false">
+            <button class="button primary" type="submit">
+                <span class="button-content">Subscribe</span>
+                <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
+    </path>
+</svg></span>
+            </button>
+        </div>
+        <div id="form-signup-success" class="message-success">
+            <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+        </div>
+        <div id="form-signup-fail" class="message-error">
+            Please enter a valid email address!
+        </div>
+    </form>
+</section>            
+
+            <section>
+            <script>
+            function shareFB(e){
+                const fbURL = `https://www.facebook.com/sharer.php?u=${window.location.href}`
+                window.open(fbURL, "_blank");
+                return false;
+            }
+            function shareLI(e) {
+                const title = document.getElementById("post-title").innerHTML;
+                const linkedinURL = `https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${encodeURIComponent(title)}&source=InterviewQuery`
+                window.open(linkedinURL, "_blank");
+                return false;
+            }
+            function shareTWTR(e) {
+                const pageUrl = window.location.href;
+                const title = document.getElementById("post-title").innerHTML;
+                const twitterURL = `https://twitter.com/intent/tweet?url=${pageUrl}&amp;text=${encodeURIComponent(title)}&amp;via=InterviewQuery`
+                window.open(twitterURL, "_blank");
+                return false;
+            }
+            </script>
+            <div>
+                <h3>share</h3>
+                <a class="social-share-icon" style="margin-right: 10px;" aria-label="Share on Facebook" href="javascript:shareFB()" rel="external nofollow noreferrer"><svg class="icon icon--facebook icon--white" fill="#4267b2" height="24px" viewBox="0 0 20 20" version="1.1" aria-labelledby="title"><title>facebook</title><path d="M11,7.2h4.3v2.6H11V20H7.8V9.8H4V7.2h3.8V3.7c0-2,1.6-3.7,3.7-3.7h3.8v2.7h-2.9c-0.7,0-1.4,0.7-1.4,1.5V7.2z"></path></svg></a>
+                <a class="social-share-icon" style="margin-right: 10px;" aria-label="Share on Twitter" href="javascript:shareTWTR()" rel="external nofollow noreferrer"><svg class="icon icon--twitter icon--white" fill="rgb(29, 161, 242)" height="24px" viewBox="0 0 20 20" version="1.1" aria-labelledby="title"><title>twitter</title><path d="M20,4c-0.7,0.3-1.5,0.6-2.4,0.7c0.9-0.5,1.5-1.4,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1C16.1,2.5,15,2,13.8,2c-2.3,0-4.1,1.9-4.1,4.2c0,0.3,0,0.7,0.1,1C6.4,7,3.4,5.4,1.4,2.9C1,3.5,0.8,4.1,0.8,4.9c0,1.4,0.7,2.7,1.8,3.5C2,8.4,1.4,8.2,0.8,7.9v0.1c0,2,1.4,3.7,3.3,4.1c-0.4,0.1-0.7,0.2-1.1,0.2c-0.3,0-0.5,0-0.8-0.1c0.5,1.7,2,2.9,3.8,2.9c-1.4,1.1-3.2,2-5.1,2c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.7,6.3,1.7c7.5,0,11.7-6.4,11.7-12V6.1C18.8,5.6,19.4,4.8,20,4z"></path></svg></a>
+                <a class="social-share-icon" style="margin-right: 10px;" aria-label="Share on LinkedIn" href="javascript:shareLI()" rel="external nofollow noreferrer"><svg class="icon icon--linkedin icon--white" viewBox="0 0 20 20" version="1.1" fill="#0073b1" height="24px" aria-labelledby="title"><title>linkedin</title><path d="M0.4,6.4v12.5h4.2V6.4H0.4z M11.2,11.7c0-1.6,1.1-2.4,2.3-2.4s2.3,0.8,2.3,2.8v6.9H20v-7.3C20,8.1,17.9,6,15,6c-1.7,0-2.9,0.9-3.8,2.1l-0.1-1.7H7C7,6.9,7,9.3,7,9.3v9.7h4.2V11.7z M2.4,4.4C4,4.4,5,3.4,5,2.2C4.9,1,4,0,2.5,0C0.9,0-0.1,1-0.1,2.2C-0.1,3.4,0.9,4.4,2.4,4.4L2.4,4.4z"></path></svg></a>
+            </div>
+</section>        </article>
+        <aside class="toc-container">
+               <div class="toc"><ol class="toc-list "><li class="toc-list-item is-active-li"><a href="#introduction" class="toc-link node-name--H2  is-active-link">Introduction</a></li><li class="toc-list-item"><a href="#facebook-interview-questions" class="toc-link node-name--H2 ">Facebook Interview Questions</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#facebook-case-study-interview-questions" class="toc-link node-name--H3 ">Facebook Case Study Interview Questions</a></li><li class="toc-list-item"><a href="#facebook-sql-interview-questions" class="toc-link node-name--H3 ">Facebook SQL Interview Questions</a></li><li class="toc-list-item"><a href="#facebook-statistics-and-probability-interview-questions" class="toc-link node-name--H3 ">Facebook Statistics and Probability Interview Questions</a></li></ol></li><li class="toc-list-item"><a href="#machine-learning-interview-questions" class="toc-link node-name--H2 ">Machine Learning Interview Questions</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#facebook-system-design-interview-questions" class="toc-link node-name--H3 ">Facebook System Design Interview Questions</a></li><li class="toc-list-item"><a href="#facebook-coding-interview-questions" class="toc-link node-name--H3 ">Facebook Coding Interview Questions</a></li></ol></li></ol></div>
+           </aside>
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+                <article class="read-next-card">
+                    <header class="read-next-card-header">
+                        <h3><span>More in</span> <a href="/tag/company/">Company Guides</a></h3>
+                    </header>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li>
+                                <h4><a href="/blog-amazon-data-engineer-salary/">Amazon Data Engineer Salaries and Analysis</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-06-04">4 Jun 2021</time> –
+                                        2 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="/blog-amazon-sql-interview-questions/">Amazon SQL Interview Questions</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-01-29">29 Jan 2021</time> –
+                                        7 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="/blog-bytedance-data-scientist-interview/">The ByteDance Data Scientist Interview</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2020-11-09">9 Nov 2020</time> –
+                                        6 min read</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="/tag/company/">See all 37 posts
+                            →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-company ">
+
+    <a class="post-card-image-link" href="/blog-amazon-machine-learning-interview-questions-solutions/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2020/04/amazon_ml.png 300w,
+                    /content/images/size/w600/2020/04/amazon_ml.png 600w,
+                    /content/images/size/w1000/2020/04/amazon_ml.png 1000w,
+                    /content/images/size/w2000/2020/04/amazon_ml.png 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="/content/images/size/w600/2020/04/amazon_ml.png" alt="Amazon Machine Learning Interview Questions and Solutions">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/blog-amazon-machine-learning-interview-questions-solutions/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Company Guides</div>
+                <h2 class="post-card-title">Amazon Machine Learning Interview Questions and Solutions</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>The onsite consists of five rounds of interviews. These interviews are composed of a mixture of behavioral, software engineering, and machine learning questions.</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Jay Feng
+                    </div>
+            
+                    <a href="/author/jay/" class="static-avatar">
+                        <img class="author-profile-image" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/content/images/size/w100/2020/03/jays_face.jpg" alt="Jay Feng">
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/jay/">Jay Feng</a></span>
+                <span class="post-card-byline-date"><time datetime="2020-04-20">20 Apr 2020</time> <span class="bull">•</span> 6 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+                <article class="post-card post tag-company ">
+
+    <a class="post-card-image-link" href="/blog-nvidia-data-science-interview/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2020/04/nvidia_blog.jpg 300w,
+                    /content/images/size/w600/2020/04/nvidia_blog.jpg 600w,
+                    /content/images/size/w1000/2020/04/nvidia_blog.jpg 1000w,
+                    /content/images/size/w2000/2020/04/nvidia_blog.jpg 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="/content/images/size/w600/2020/04/nvidia_blog.jpg" alt="The NVIDIA Data Science Interview">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/blog-nvidia-data-science-interview/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Company Guides</div>
+                <h2 class="post-card-title">The NVIDIA Data Science Interview</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Data scientists at NVIDIA leverage the most advanced data science technology in their products that ultimately get used in professional visualization, data centers, artificial intelligence, virtual reality, and self-driving cars.</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Jay Feng
+                    </div>
+            
+                    <a href="/author/jay/" class="static-avatar">
+                        <img class="author-profile-image" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/content/images/size/w100/2020/03/jays_face.jpg" alt="Jay Feng">
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/jay/">Jay Feng</a></span>
+                <span class="post-card-byline-date"><time datetime="2020-04-15">15 Apr 2020</time> <span class="bull">•</span> 4 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+        </div>
+    </div>
+
+</aside>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.interviewquery.com">Interview Query Blog</a> © 2021</section>
+                <nav class="site-footer-nav">
+                    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.interviewquery.com">Latest Posts</a>
+                    <a href="https://www.facebook.com/ghost" target="_blank" rel="noopener external nofollow noreferrer">Facebook</a>
+                    <a href="https://twitter.com/tryghost" target="_blank" rel="noopener external nofollow noreferrer">Twitter</a>
+                    
+                </nav>
+            </div>
+            <div>
+                <style type="text/css">
+                    .iq-subscribe-btn {
+                        cursor: pointer;
+                        color: #333;
+                    }
+                    #iq-sub-email {
+                        color: #333;
+                    }
+                    .err-msg {
+                        color: red;
+                    }
+                    .success-msg {
+                        color: green;
+                    }
+                    .hide {
+                        display: none;
+                    }
+                </style>
+                <div class="success-msg hide">
+                        <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+                    </div>
+                    <div class="err-msg hide">
+                        Please enter a valid email address!
+                    </div>
+                <input id="iq-sub-email" type="email" placeholder="email@address.com">
+                <button class="iq-subscribe-btn">
+                    Subscribe
+                </button>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="subscribe-success-message">
+        <a class="subscribe-close" href="javascript:;" rel="external nofollow noreferrer"></a>
+        You've successfully subscribed to Interview Query Blog!
+    </div>
+
+    <div id="subscribe" class="subscribe-overlay">
+        <a class="subscribe-close-overlay" href="#"></a>
+        <a class="subscribe-close-button" href="#"></a>
+        <div class="subscribe-overlay-content">
+            <div class="subscribe-form">
+                <h1 class="subscribe-overlay-title">Subscribe to Interview Query Blog</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <form data-members-form="subscribe">
+                    <div class="form-group">
+                        <input class="subscribe-email" data-members-email="" placeholder="youremail@example.com" autocomplete="false">
+                        <button class="button primary" type="submit">
+                            <span class="button-content">Subscribe</span>
+                            <span class="button-loader"><svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
+    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
+    </path>
+</svg></span>
+                        </button>
+                    </div>
+                    <div class="message-success">
+                        <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
+                    </div>
+                    <div class="message-error">
+                        Please enter a valid email address!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="/assets/built/casper.js?v=afdabc9d2b"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+
+        $(document).ready(function () {
+            if (action == 'subscribe') {
+                $('body').addClass("subscribe-success");
+            }
+
+            $('.subscribe-success-message .subscribe-close').click(function () {
+                $('.subscribe-success-message').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
+     <script type="text/javascript">
+                    (function(){
+                        $('.iq-subscribe-btn').click(function(){
+                            const $input = $('#iq-sub-email');
+                            const email = $input.val();
+                            if (email === '' || email.includes('@') === false) {
+                                $('.err-msg').removeClass('hide');
+                                $input.val('');
+                                setTimeout(function(){
+                                    $('.err-msg').addClass('hide')
+                                }, 2000)
+                                return;
+                            }
+                            const url = new URL('https://www.interviewquery.com/get-started');
+                            url.searchParams.set('email', email);
+                            console.log(url.toString())
+                            fetch(url.toString()).then(function(resp){
+                                if (resp.ok) {
+                                    $('.success-msg').removeClass('hide');
+                                }
+                            })
+                        })
+                    })();
+                </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.10.0/tocbot.min.js"></script>
+    <script>
+        tocbot.init({
+            tocSelector: '.toc',
+            contentSelector: '.post-content',
+            hasInnerContainers: true
+        });
+    </script>
+    <script type="text/javascript">
+    (function(){
+        $('#iq-subscribe-form').submit(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('submitting');
+            const iqUrl= "https://www.interviewquery.com/get-started";
+            const email = $('#footer-subscribe-email').val();
+            $.ajax(`${iqUrl}/?email=${email}`).done(function() {
+                console.log('we are here');
+                $('#form-signup-success').attr('style','display: block !important');
+                setTimeout(function(){
+                    $('#form-signup-success').attr('style','');
+                }, 2000);
+              })
+              .fail(function() {
+                $('#form-signup-fail').attr('style','display: block !important');
+                setTimeout(function(){
+                    $('#form-signup-fail').attr('style','');
+                }, 2000);
+              })
+        })
+    })();
+</script>
+<script>
+    $(document).ready(function () {
+        // FitVids - start
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // FitVids - end
+
+        // Replace nav with title on scroll - start
+        Casper.stickyNavTitle({
+            navSelector: '.site-nav-main',
+            titleSelector: '.post-full-title',
+            activeClass: 'nav-post-title-active'
+        });
+        // Replace nav with title on scroll - end
+
+        // Hover on avatar
+        var hoverTimeout;
+        $('.author-list-item').hover(function () {
+            var $this = $(this);
+
+            clearTimeout(hoverTimeout);
+
+            $('.author-card').removeClass('hovered');
+            $(this).children('.author-card').addClass('hovered');
+
+        }, function () {
+            var $this = $(this);
+
+            hoverTimeout = setTimeout(function () {
+                $this.children('.author-card').removeClass('hovered');
+            }, 800);
+        });
+    });
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.2/tocbot.min.js" integrity="sha512-7UTycJFXmNG9IKkkV5JWoexFWByJK1mrmn91iIJXst84COVlQzAz5nZ9P/q7L1nvj7Xjtjx6FMlbMeb6svpn/w==" crossorigin="anonymous"></script>
+<script>
+    tocbot.init({
+        tocSelector: '.toc',
+        contentSelector: '.post-content',
+        hasInnerContainers: true
+    });
+</script>
+
+
+
+<div id="ghost-portal-root"></div><div id="ghost-portal-root"></div><script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.css"></article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/reading-notes/cqNotes/SoftwareDev/SpringInAction/spring-in-action-notes-01/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Spring In Action Reading Notes (1)</div></div></a></div><div class="next-post pull-right"><a href="/reading-notes/cqNotes/ML/cq-info-theory/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2021/09/09/04/38/binary-6609473_1280.jpg" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">cq_info_theory</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#post-title"><span class="toc-number">1.</span> <span class="toc-text">Facebook Data Science Interview Questions and Solutions</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#site-main"><span class="toc-number">1.1.</span> <span class="toc-text">Jay Feng</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#site-main"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">Jay Feng</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#introduction"><span class="toc-number">1.2.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#facebook-interview-questions"><span class="toc-number">1.3.</span> <span class="toc-text">Facebook Interview Questions</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#facebook-case-study-interview-questions"><span class="toc-number">1.3.1.</span> <span class="toc-text">Facebook Case Study Interview Questions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#facebook-sql-interview-questions"><span class="toc-number">1.3.2.</span> <span class="toc-text">Facebook SQL Interview Questions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#facebook-statistics-and-probability-interview-questions"><span class="toc-number">1.3.3.</span> <span class="toc-text">Facebook Statistics and Probability Interview Questions</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#machine-learning-interview-questions"><span class="toc-number">1.4.</span> <span class="toc-text">Machine Learning Interview Questions</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#facebook-system-design-interview-questions"><span class="toc-number">1.4.1.</span> <span class="toc-text">Facebook System Design Interview Questions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#facebook-coding-interview-questions"><span class="toc-number">1.4.2.</span> <span class="toc-text">Facebook Coding Interview Questions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#site-main"><span class="toc-number">1.4.3.</span> <span class="toc-text">Want more interview questions?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#site-main"><span class="toc-number">1.4.4.</span> <span class="toc-text">share</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.4.5.</span> <span class="toc-text">More in Company Guides</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-number">1.4.5.1.</span> <span class="toc-text">Amazon Data Engineer Salaries and Analysis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-number">1.4.5.2.</span> <span class="toc-text">Amazon SQL Interview Questions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-number">1.4.5.3.</span> <span class="toc-text">The ByteDance Data Scientist Interview</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.5.</span> <span class="toc-text">Amazon Machine Learning Interview Questions and Solutions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.6.</span> <span class="toc-text">The NVIDIA Data Science Interview</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#subscribe"><span class="toc-number">2.</span> <span class="toc-text">Subscribe to Interview Query Blog</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/reading-notes/js/utils.js"></script><script src="/reading-notes/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/reading-notes/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script></div></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
