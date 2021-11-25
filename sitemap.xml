@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bzhao2718.github.io/reading-notes/samples/ins_hexo_setup/</loc>
+    
+    <lastmod>2021-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/samples/SubFolder/encrypt_example1/</loc>
+    
+    <lastmod>2021-11-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/MyBatisBasicsNotes/MyBatis-basics-notes-01/</loc>
     
     <lastmod>2021-11-25</lastmod>
@@ -101,13 +115,6 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_loss_function/</loc>
-    
-    <lastmod>2021-11-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/samples/ins_hexo_setup/</loc>
     
     <lastmod>2021-11-25</lastmod>
     
