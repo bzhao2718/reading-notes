@@ -25,8 +25,8 @@
 - 2020-01-01 [Hexo Setup Instructions](https://bzhao2718.github.io/reading-notes/samples/ins_hexo_setup/)  
 - 2020-01-01 [Butterfly Markdown Example (1)](https://bzhao2718.github.io/reading-notes/samples/SubFolder/butterfly_markdown_example-01/)  
 - 2020-01-01 [Posts Statistics Example](https://bzhao2718.github.io/reading-notes/samples/SubFolder/hexo_stats_chart/)  
-- 2020-01-01 [Markmap Test](https://bzhao2718.github.io/reading-notes/samples/SubFolder/markmap_test/)  
 - 2020-01-01 [Math Equations Test](https://bzhao2718.github.io/reading-notes/samples/SubFolder/math_test/)  
+- 2020-01-01 [Markmap Test](https://bzhao2718.github.io/reading-notes/samples/SubFolder/markmap_test/)  
 - 2020-01-01 [Pandoc Instructions General](https://bzhao2718.github.io/reading-notes/samples/SubFolder/SubSubFolder/ins_pandoc_general/)  
 - 2020-01-01 [Check Attachments](https://bzhao2718.github.io/reading-notes/samples/SubFolder/check-attachements/)  
   
