@@ -1,0 +1,598 @@
+<!DOCTYPE html><html class="hide-aside" lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pandoc Instructions General | ReadingNotes</title><meta name="keywords" content="sample, test"><meta name="author"><meta name="copyright"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Pandoc General Howto [TOC] My Pandoc pdf latex workflow Memo Use begin{aligned} environment for aligning equations because using other commands (e.g., align, align*) will cause errors, likely because">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pandoc Instructions General">
+<meta property="og:url" content="https://bzhao2718.github.io/reading-notes/samples/SubFolder/SubSubFolder/ins_pandoc_general/index.html">
+<meta property="og:site_name" content="ReadingNotes">
+<meta property="og:description" content="Pandoc General Howto [TOC] My Pandoc pdf latex workflow Memo Use begin{aligned} environment for aligning equations because using other commands (e.g., align, align*) will cause errors, likely because">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png">
+<meta property="article:published_time" content="2021-01-02T00:19:39.000Z">
+<meta property="article:modified_time" content="2021-11-25T01:43:24.405Z">
+<meta property="article:tag" content="sample">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png"><link rel="shortcut icon" href="/reading-notes/img/favicon.png"><link rel="canonical" href="https://bzhao2718.github.io/reading-notes/samples/SubFolder/SubSubFolder/ins_pandoc_general/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/reading-notes/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/reading-notes/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Pandoc Instructions General',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-11-24 19:43:24'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script async src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/carousel-touch.min.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/archives/"><div class="headline">Articles</div><div class="length-num">25</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/reading-notes/">ReadingNotes</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">Pandoc Instructions General</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-01-02T00:19:39.000Z" title="Created 2021-01-01 18:19:39">2021-01-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-11-25T01:43:24.405Z" title="Updated 2021-11-24 19:43:24">2021-11-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/reading-notes/categories/Sample/">Sample</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>22min</span></span></div></div></div><article class="post-content" id="article-container"><h2 id="pandoc-general-howto">Pandoc General Howto</h2>
+<p>[TOC]</p>
+<h3 id="my-pandoc-pdf-latex-workflow">My Pandoc pdf latex workflow</h3>
+<h3 id="memo">Memo</h3>
+<p>Use begin{aligned} environment for aligning equations because using other commands (e.g., align, align*) will cause errors, likely because the align environment is enclosed in <code>$$</code> .</p>
+<h3 id="some-links-to-tutorials">Some links to tutorials</h3>
+<p>Here are some tutorials on basic usage or how to use Pandoc commands. This is the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://pandoc.org/demos.html">pandoc demos</a> page.</p>
+<p>A tutorial on <a target="_blank" rel="noopener external nofollow noreferrer" href="https://kbroman.org/minimal_make/">basic make use</a>.</p>
+<p>A make file starter <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/kjhealy/md-starter">github repo</a>.</p>
+<p>Some explanation on the make files using Pandoc at thes <a target="_blank" rel="noopener external nofollow noreferrer" href="https://plain-text.co/pull-it-together.html#pull-it-together">post</a>.</p>
+<p>This <a target="_blank" rel="noopener external nofollow noreferrer" href="https://plain-text.co/pull-it-together.html#pull-it-together">tutorial on sustainable authorship in plan text</a> seems to be a good one.</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/learnbyexample/learnbyexample.github.io/tree/master/files/pandoc_pdf">learnbyexample</a> repo seems to have some sh scripts for Pandoc, as shown in the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://learnbyexample.github.io/customizing-pandoc/">post</a>.</p>
+<h3 id="sec_examples">Examples</h3>
+<h4 id="pandoc-command-examples">pandoc command examples</h4>
+<h5 id="metadata-ymal">Metadata ymal</h5>
+<p>csl and bibliography is needed for citation using the command below. csl specifies style and can be downloaded from like this <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/citation-style-language/styles">official citation style language repo</a>.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bibliography: curr_zotero_bibtex2021.bib</span><br><span class="line">csl: curr_zotero_CSL_JSON2021.json</span><br><span class="line">link-citations: true</span><br><span class="line">toc: true</span><br></pre></td></tr></tbody></table></figure>
+<p>-C (or —citeproc) is needed for processing citations.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-f markdown -t latex -s -o currTest.pdf -C pandocTestcopy.md</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc "document.md" -o "elegantTest2.pdf" --from markdown --listings --top-level-division="chapter" -s</span><br></pre></td></tr></tbody></table></figure>
+<p>With the following for book document.md</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">title: "Example PDF"</span><br><span class="line">author: [Author]</span><br><span class="line">documentclass: elegantbook</span><br><span class="line">date: "2017-02-20"</span><br><span class="line">subject: "Markdown"</span><br><span class="line">keywords: [Markdown, Example]</span><br><span class="line">book: true</span><br><span class="line">classoption: [oneside]</span><br><span class="line">toc: true</span><br><span class="line">lof: true</span><br><span class="line">lot: true</span><br></pre></td></tr></tbody></table></figure>
+<p>For a folder content and there are several md files.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -s -N --biblatex --listings --top-level-division=chapter --template=template.tex metadata.md content/*.md -o $1.tex</span><br></pre></td></tr></tbody></table></figure>
+<p>Comment: I thin $1 here is for the first argument.</p>
+<p>Make an elegant book document using this command:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -f markdown -t pdf -o ins_pandoc_pdf.pdf ins_pandoc.md --toc --filter pandoc-crossref --shift-heading-level=-1 --citeproc --metadata documentclass=<span class="string">"elegantbook"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>Comment: here —shift-heading-level = -1 shifts heading2 to heading1.</p>
+<h5 id="beamer-commands-examples">Beamer commands examples</h5>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc "document.md" -o "mydocument.pdf" --from markdown --to beamer --template "../../eisvogel.tex" --listings</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="make-pdf-books">Make pdf books</h4>
+<p>The pandoc-book-template-master file contains a Makefile that has a workflow of run pandoc commands using make. And it complies everything in the chapters directory and make a book. Build a book under a directory build/book. It looks like it supports other (them, docx) file formats. I added latex format.</p>
+<p>Now, to use the elegantbook style, generate the latex file using <code>make latex</code> and open the resulting file and manually change the document class variable/settings. Looks like removing the unicode character error, it will generate the book with elegantbookstyle.</p>
+<p>Also, using the pandoc on the command line on the resulting latex file will generate a pdf book but not using the document class elgantbook (maybe setting it on the command line will work?).</p>
+<h5 id="include-sub-files">Include sub files</h5>
+<p>It turns out that at least I can use raw latex <code>\include</code> command, but the files need to be in tex format without standalone format. Then run the index.md with a bunch of include will work.</p>
+<h5 id="markdown-testing-1">Markdown Testing 1</h5>
+<p>This is a footnote<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. But not sure the <strong>previous</strong> will <em>work</em> <strong><em>because</em></strong> it’s not ==provided== later. This should work<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> fine. Footnote should be of the same name. Some <sup>superscript</sup> and <sub>subscript</sub>. And this is a comment <!--cut--> is the <strong>previous</strong> cut comment skipped? Citation <span class="citation" data-cites="agarwal_neural_2020">[@agarwal_neural_2020]</span> and multiple author <span class="citation" data-cites="alguliev_multiple_2013 allahyari_text_2017 anchieta_sema_2019">[@alguliev_multiple_2013; @allahyari_text_2017; @anchieta_sema_2019]</span>. Should work.</p>
+<p>And <del>some</del> more texts. Also in text citation <span class="citation" data-cites="anchieta_sema_2019">[@anchieta_sema_2019]</span> says something.</p>
+<p>Some maths inline <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex" xmlns="http://www.w3.org/2000/svg" width="12.201ex" height="2.351ex" role="img" focusable="false" viewBox="0 -833.9 5392.7 1038.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mn" transform="translate(605,363) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(1230.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msup" transform="translate(2231,0)"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mn" transform="translate(523,363) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(3435.3,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msup" transform="translate(4491.1,0)"><g data-mml-node="mi"><path data-c="1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"></path></g><g data-mml-node="mn" transform="translate(498,363) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></svg></mjx-container></span> and math mode: <span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -1.738ex" xmlns="http://www.w3.org/2000/svg" width="30.867ex" height="4.267ex" role="img" focusable="false" viewBox="0 -1118 13643.3 1886"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mn" transform="translate(605,413) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(1230.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mfrac" transform="translate(2231,0)"><g data-mml-node="mi" transform="translate(1122.2,676)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mrow" transform="translate(220,-686)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(794.2,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(1794.4,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><rect width="2494.4" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(5187.7,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(6187.9,0)"><path data-c="1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></g><g data-mml-node="mo" transform="translate(7050.1,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mi" transform="translate(8050.3,0)"><path data-c="1D6FD" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path></g><g data-mml-node="mo" transform="translate(8838.6,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mi" transform="translate(9838.8,0)"><path data-c="1D70E" d="M184 -11Q116 -11 74 34T31 147Q31 247 104 333T274 430Q275 431 414 431H552Q553 430 555 429T559 427T562 425T565 422T567 420T569 416T570 412T571 407T572 401Q572 357 507 357Q500 357 490 357T476 358H416L421 348Q439 310 439 263Q439 153 359 71T184 -11ZM361 278Q361 358 276 358Q152 358 115 184Q114 180 114 178Q106 141 106 117Q106 67 131 47T188 26Q242 26 287 73Q316 103 334 153T356 233T361 278Z"></path></g><g data-mml-node="mo" transform="translate(10687.6,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(11743.3,0)"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g><g data-mml-node="mo" transform="translate(12293.3,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(12682.3,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(13254.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span> The above is a math.</p>
+<p>This links to a file <a href="pandocTestOtherspecs.md">lingtoafile</a>. Ok. It’s working in pdf as well. If I put [] and (filename.ext) this will open filename.ext in the pdf file as well. If I put an absolute path not working,</p>
+<p>This is a file link to a file in the subfolder <a href="subfolder/sub.md">subfile</a>. And this is a file from one level up parent folder <a href="../parent1/parent1file.md">level1Parent</a>. How about these. <strong>In markdown file, links to files are working.</strong> <strong>In pdf file on computer, sublevel reference link is working, but not parent folders.</strong> This is a Devon link to the <a href="x-devonthink-item://C8B5309D-8F2D-4AD3-B1BF-B7C98C974210" rel="external nofollow noreferrer">lingtoafile</a>. Check it. To <a href="x-devonthink-item://C6C02A59-AE29-4EBC-81D5-4CC2928EA991" rel="external nofollow noreferrer">another Devon file</a>. Ok. Besides using devon think link, use double brackets now [[pandocTestOtherspecs]] and it is woking. Another one [[MyBeamerPresentations]].</p>
+<p>Extension: task_lists</p>
+<p>Pandoc supports task lists, using the syntax of GitHub-Flavored Markdown.</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled="">
+an unchecked task list item</li>
+<li><input type="checkbox" disabled="" checked="">
+checked item</li>
+</ul>
+<p>Pandoc supports deﬁnition lists, using the syntax of PHP Markdown Extra with some extensions.2</p>
+<h3 id="usage-basics">Usage Basics</h3>
+<h5 id="metadata">Metadata</h5>
+<p>Example:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pandoc --metadata \</span><br><span class="line">    title="U. S. Constitution" \</span><br><span class="line">    pubdate="September 28, 1787" \</span><br><span class="line">    --from markdown --to html --template doc1.tmpl \</span><br><span class="line">    constitution.txt</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="input-output--o--s">Input output, -o -s</h5>
+<p>If no <em>input-files</em> are specified, input is read from <em>stdin</em>. Output goes to <em>stdout</em> by default. For output to a file, use the -o option:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -o output.html input.txt</span><br></pre></td></tr></tbody></table></figure>
+By default, pandoc produces a document fragment. To produce a standalone document (e.g. a valid HTML file including
+
+and
+
+<p>), use the -s or --standalone flag:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -s -o output.html input.txt</span><br></pre></td></tr></tbody></table></figure>
+<p>This option is set automatically for pdf, epub, epub3, fb2, docx, and odt output.</p>
+<p>If multiple input files are given, pandoc will concatenate them all (with blank lines between</p>
+<p>them) before parsing. (Use --file-scope to parse files individually.)</p>
+<h5 id="from-to">From to</h5>
+<p>The input format can be specified using the -f/--from option, the output format using the -t/--to option. Thus, to convert hello.txt from Markdown to LaTeX, you could type:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -f markdown -t latex hello.txt</span><br></pre></td></tr></tbody></table></figure>
+<p>You can also use pandoc --list-input-formats and pandoc --list-output-formats to print lists of supported formats.</p>
+<h5 id="create-pdf">Create PDF</h5>
+<p>To produce a PDF, specify an output file with a .pdf extension:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc test.txt -o test.pdf</span><br></pre></td></tr></tbody></table></figure>
+<p>Or we can use the pdf engines. To do this, specify an output file with a .pdf extension, as before, but add the --pdf-engine option or -t context, -t html, or -t ms to the command line. The tool used to generate the PDF from the intermediate format may be specified using --pdf-engine.</p>
+<h5 id="data-directory">Data directory</h5>
+<p>--data-dir=DIRECTORY Specify the user data directory to search for pandoc data ﬁles. If this option is not speciﬁed, the default user data directory will be used.</p>
+<p>You can ﬁnd the default user data directory on your system by looking at the output of pandoc --version. Data ﬁles placed in this directory (for example, reference.odt, reference.docx, epub.css, templates) will override pandoc’s normal defaults.</p>
+<h5 id="suppress-warning-messages">Suppress warning messages</h5>
+<p>--quiet Suppress warning messages.</p>
+<h5 id="shift-document-heading">Shift document heading</h5>
+<p>--shift-heading-level-by=NUMBER Shift heading levels by a positive or negative in-</p>
+<p>teger. For example, with --shift-heading-level-by=-1, level 2 headings become level 1 headings, and level 3 headings become level 2 headings. Headings cannot have a level less than 1, so a heading that would be shifted below level 1 becomes a regular paragraph.</p>
+<p>--base-header-level=NUMBER Deprecated.</p>
+<p>Use --shift-heading-level-by=X instead, where X = NUMBER 1. Specify the base level for headings (defaults to 1).</p>
+<h5 id="ignore-empty-paragraphs">Ignore empty paragraphs</h5>
+<p>--strip-empty-paragraphs Deprecated. Use the +empty_paragraphs extension instead. Ig-</p>
+<p>nore paragraphs with no content. This option is useful for converting word processing documents where users have used empty paragraphs to create inter-paragraph space.</p>
+<h5 id="filters">filters</h5>
+<p>-F PROGRAM, --filter=PROGRAM Specify an executable to be used as a ﬁlter transforming the pandoc AST after the input is parsed and before the output is written. The executable should read JSON from stdin and write JSON to stdout. The JSON must be formatted like pandoc’s own JSON input and output. The name of the output format will be passed to the ﬁlter as the ﬁrst argument. Hence,</p>
+<p>pandoc --filter ./caps.py -t latex</p>
+<p>is equivalent to</p>
+<p>pandoc -t json | ./caps.py latex | pandoc -f json -t latex</p>
+<p>Filters may be written in any language. Those who would prefer to write ﬁlters in python can use the module pandocfilters, installable from PyPI.</p>
+<p>-L SCRIPT, --lua-filter=SCRIPT Transform the document in a similar fashion as JSON ﬁlters (see --filter), but use pandoc’s built-in Lua ﬁltering system.</p>
+<h5 id="metadata-key-value">Metadata key value</h5>
+<p>-M KEY[=VAL], --metadata=KEY[:VAL] Set the metadata ﬁeld KEY to the value VAL. A</p>
+<p>value speciﬁed on the command line overrides a value speciﬁed in the document using YAML metadata blocks. Values will be parsed as YAML boolean or string values.</p>
+<p>--metadata-file=FILE Read metadata from the supplied YAML (or JSON) ﬁle.</p>
+<h5 id="extract-media">Extract media</h5>
+<p>--extract-media=DIR Extract images and other media contained in or linked from the source document to the path DIR, creating it if necessary, and adjust the images references in the document so they point to the extracted ﬁles. Media are downloaded, read from the ﬁle system, or extracted from a binary container (e.g. docx), as needed. The original ﬁle paths are used if they are relative paths not containing ... Otherwise ﬁlenames are constructed from the SHA1 hash of the contents.</p>
+<h5 id="table-of-contents-depth">Table of contents depth</h5>
+<p>--toc-depth=NUMBER Specify the number of section levels to include in the table of contents. The default is 3 (which means that level-1, 2, and 3 headings will be listed in the contents).</p>
+<h5 id="code-highlight-style">Code highlight style</h5>
+<p>--highlight-style=STYLE|FILE Speciﬁes the coloring style to be used in highlighted source code. Options are pygments (the default), kate, monochrome, breezeDark,</p>
+<p>espresso, zenburn, haddock, and tango. See also --list-highlight-styles.</p>
+<h5 id="top-level-dividion">Top level dividion</h5>
+<p>--top-level-division=default|section|chapter|part Treat top-level headings as the</p>
+<p>given division type in LaTeX, ConTeXt, DocBook, and TEI output. The hierarchy order is part, chapter, then section; all headings are shifted such that the top-level heading becomes the speciﬁed type. The default behavior is to determine the best division type via heuristics: unless other conditions apply, section is chosen. When the documentclass variable is set to report, book, or memoir (unless the article option is speciﬁed), chapter is implied as the setting for this option. If beamer is the output format, specifying either chapter or part will cause top-level headings to become <code>\part{..}</code>, while second-level headings remain as their default type.</p>
+<h5 id="number-sections">Number sections</h5>
+<p>-N, --number-sections Number section headings in LaTeX, ConTeXt, HTML, Docx, ms, or EPUB output. By default, sections are not numbered. Sections with class unnumbered will never be numbered, even if --number-sections is speciﬁed.</p>
+<h5 id="slide-level-beamer-etc">Slide level beamer, etc</h5>
+<p>--slide-level=NUMBER Speciﬁes that headings with the speciﬁed level create slides (for beamer, s5, slidy, slideous, dzslides). Headings above this level in the hierarchy are used to divide the slide show into sections; headings below this level create subheads within a slide. Note that content that is not contained under slide-level headings will not appear in the slide show. The default is to set the slide level based on the contents of the document; see Structuring the slide show.</p>
+<h5 id="ipynb-output">Ipynb output</h5>
+<p>--ipynb-output=all|none|best Determines how ipynb output cells are treated.</p>
+<p>all</p>
+<p>means that all of the data formats included in the original are preserved. none means that the contents of data cells are omitted. best causes pandoc to try to pick the richest data block in each output cell that is compatible with the output format. The default is best.</p>
+<h5 id="template">Template</h5>
+<p>When the -s/--standalone option is used, pandoc uses a template to add header and footer material that is needed for a self-standing document.</p>
+<p>A custom template can be speciﬁed using the --template option. You can also override the system default templates for a given output format FORMAT by putting a ﬁle templates/default.<em>FORMAT</em> in the user data directory (see --data-dir, above).</p>
+<h5 id="headings-unnumbered">Headings unnumbered</h5>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Headings with the class unnumbered will not be numbered, even if --number-sections is speciﬁed. A single hyphen (-) in an attribute context is equivalent to .unnumbered, and preferable in non-English documents. So,</span><br><span class="line"></span><br><span class="line"># My heading {-}</span><br><span class="line"></span><br><span class="line">is just the same as</span><br><span class="line"></span><br><span class="line"># My heading {.unnumbered}</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="rebase-relative-paths">Rebase relative paths</h5>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Extension: rebase_relative_paths</span><br><span class="line"></span><br><span class="line">Rewrite relative paths for Markdown links and images, depending on the path of the ﬁle containing the link or image link. For each link or image, pandoc will compute the directory of the containing ﬁle, relative to the working directory, and prepend the resulting path to the link or image path.</span><br><span class="line"></span><br><span class="line">The use of this extension is best understood by example. Suppose you have a a subdirectory for each chapter of a book, chap1, chap2, chap3. Each contains a ﬁle text.md and a number of images used in the chapter. You would like to have ![image](spider.jpg) in chap1/text.md refer to chap1/spider.jpg and ![image](spider.jpg) in chap2/text.md</span><br><span class="line"></span><br><span class="line">refer to chap2/spider.jpg. To do this, use</span><br><span class="line"></span><br><span class="line">pandoc chap*/*.md -f markdown+rebase_relative_paths</span><br><span class="line"></span><br><span class="line">Without this extension, you would have to use {% asset_img spider.jpg image %} in chap1/text.md and {% asset_img spider.jpg image %} in chap2/text.md. Links with rel-</span><br><span class="line"></span><br><span class="line">ative paths will be rewritten in the same way as images.</span><br><span class="line"></span><br><span class="line">Absolute paths and URLs are not changed. Neither are empty paths or paths consisting entirely of a fragment, e.g., #foo.</span><br><span class="line"></span><br><span class="line">Note that relative paths in reference links and images will be rewritten relative to the ﬁle containing the link reference deﬁnition, not the ﬁle containing the reference link or image itself, if these differ.</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="citations-in-note-style">Citations in note style</h5>
+<p>Pandoc’s citation processing is designed to allow you to move between author-date, numerical, and note styles without modifying the markdown source. When you’re using a note style, avoid inserting footnotes manually. Instead, insert citations just as you would in an author-date style—for example,</p>
+<p>Blah blah <span class="citation" data-cites="foo">[@foo, p. 33]</span>.</p>
+<p>The footnote will be created automatically. Pandoc will take care of removing the space and moving the note before or after the period, depending on the setting of notes-afterpunctuation, as described below in Other relevant metadata ﬁelds.</p>
+<p>In some cases you may need to put a citation inside a regular footnote. Normal citations in footnotes (such as <span class="citation" data-cites="foo">[@foo, p. 33]</span>) will be rendered in parentheses. In-text citations (such as <span class="citation" data-cites="foo">[@foop. 33]</span>) will be rendered without parentheses. (A comma will be added if appropriate.) Thus:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[^1]: Some studies [@foo; @bar, p. 33] show that frubulicious zoosnaps are quantical. For a survey of the literature, see @baz [chap. 1].</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="link-citations">link citations</h5>
+<p>link-citations If true, citations will be hyperlinked to the corresponding bibliography entries (for author-date and numerical styles only).</p>
+<h3 id="pandoc-markdown">Pandoc Markdown</h3>
+<h5 id="lists">lists</h5>
+<p>You can use the same trick if you want two consecutive lists instead of one big list:</p>
+<ol type="1">
+<li><p>one</p></li>
+<li><p>two</p></li>
+<li><p>three</p></li>
+</ol>
+<!-- -->
+<ol type="1">
+<li><p>uno</p></li>
+<li><p>dos</p></li>
+<li><p>tres</p></li>
+</ol>
+<h5 id="task-lists">Task lists</h5>
+<p>Extension: task_lists</p>
+<p>Pandoc supports task lists, using the syntax of GitHub-Flavored Markdown.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Extension: task_lists</span><br><span class="line"></span><br><span class="line">Pandoc supports task lists, using the syntax of GitHub-Flavored Markdown.</span><br><span class="line"></span><br><span class="line">- [ ] an unchecked task list item</span><br><span class="line"></span><br><span class="line">- [x] checked item</span><br></pre></td></tr></tbody></table></figure>
+<ul class="task-list">
+<li><p><input type="checkbox" disabled="">
+an unchecked task list item</p></li>
+<li><p><input type="checkbox" disabled="" checked="">
+checked item</p></li>
+</ul>
+<h5 id="definition-lists">Definition lists</h5>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Pandoc supports deﬁnition lists, using the syntax of PHP Markdown Extra with some extensions.2 </span><br><span class="line"></span><br><span class="line">Term 1</span><br><span class="line"></span><br><span class="line">:</span><br><span class="line"></span><br><span class="line">Definition 1</span><br><span class="line"></span><br><span class="line">Term 2 with *inline markup*</span><br><span class="line"></span><br><span class="line">:</span><br><span class="line"></span><br><span class="line">Definition 2</span><br><span class="line"></span><br><span class="line">{ some code, part of Definition 2 }</span><br><span class="line"></span><br><span class="line">Third paragraph of definition 2.</span><br></pre></td></tr></tbody></table></figure>
+<p>If you leave space before the deﬁnition (as in the example above), the text of the deﬁnition will be treated as a paragraph. In some output formats, this will mean greater spacing between term/deﬁnition pairs. For a more compact deﬁnition list, omit the space before the deﬁnition:</p>
+<p>Term 1</p>
+<p>​ ~ Definition 1</p>
+<p>Term 2</p>
+<p>​ ~ Definition 2a</p>
+<p>​ ~ Definition 2b</p>
+<h5 id="example-lists">Example lists</h5>
+<p>Extension: example_lists</p>
+<p>The special list marker @ can be used for sequentially numbered examples. The ﬁrst list item with a @ marker will be numbered ‘1’, the next ‘2’, and so on, throughout the document. The numbered examples need not occur in a single list; each new list using @ will take up where the last stopped. So, for example:</p>
+<ol class="example" type="1">
+<li>My first example will be numbered (1).</li>
+<li>My second example will be numbered (2).</li>
+</ol>
+<p>With the source:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(@) My first example will be numbered (1). </span><br><span class="line">(@) My second example will be numbered (2).</span><br><span class="line"></span><br><span class="line">Explanation of examples.</span><br><span class="line"></span><br><span class="line">(@) My third example will be numbered (3).</span><br><span class="line"></span><br><span class="line">Numbered examples can be labeled and referred to elsewhere in the document:</span><br><span class="line"></span><br><span class="line">(@good) This is a good example.</span><br><span class="line"></span><br><span class="line">As (@good) illustrates, ...</span><br><span class="line"></span><br><span class="line">The label can be any string of alphanumeric characters, underscores, or hyphens.</span><br></pre></td></tr></tbody></table></figure>
+<p>This is a numbered example:</p>
+<ol start="3" class="example" type="1">
+<li>this is a good example.</li>
+</ol>
+<p>As (3) illustrates, ...</p>
+<h5 id="verbatim">verbatim</h5>
+<p>To make a short span of text verbatim, put it inside backticks:</p>
+<p>What is the difference between <code>&gt;&gt;=</code> and <code>&gt;&gt;</code>?</p>
+<p>If the verbatim text includes a backtick, use double backticks:</p>
+<p>Here is a literal backtick <code>`</code>.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">What is the difference between `&gt;&gt;=` and `&gt;&gt;`?</span><br><span class="line"></span><br><span class="line">If the verbatim text includes a backtick, use double backticks:</span><br><span class="line"></span><br><span class="line">Here is a literal backtick `` ` ``.</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="shortcut-reference-links">shortcut reference links</h5>
+<p>Extension: shortcut_reference_links</p>
+<p>In a shortcut reference link, the second pair of brackets may be omitted entirely:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">See [my website].</span><br><span class="line"></span><br><span class="line">[my website]: http://foo.bar.baz</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="internal-links">internal links</h5>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">To link to another section of the same document, use the automatically generated identiﬁer (see Heading identiﬁers). For example:</span><br><span class="line"></span><br><span class="line">See the [Introduction](#introduction).</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line"></span><br><span class="line">See the [Introduction].</span><br><span class="line"></span><br><span class="line">[Introduction]: #introduction</span><br><span class="line"></span><br><span class="line">Internal links are currently supported for HTML formats (including HTML slide shows and EPUB), LaTeX, and ConTeXt.</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="images">images</h5>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">A link immediately preceded by a ! will be treated as an image. The link text will be used as the image’s alt text:</span><br><span class="line"></span><br><span class="line">![la lune](lalune.jpg "Voyage to the moon")</span><br><span class="line"></span><br><span class="line">![movie reel]</span><br><span class="line"></span><br><span class="line">[movie reel]: movie.gif</span><br><span class="line"></span><br><span class="line">If you just want a regular inline image, just make sure it is not the only thing in the paragraph. One way to do this is to insert a nonbreaking space after the image:</span><br><span class="line">![This image won't be a figure](/url/of/image.png)\</span><br><span class="line"></span><br><span class="line">![](file.jpg){ width=50% }</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="image-links">Image links</h5>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![textsum_types](media/contents/textsum_types.png){#fig:textsum_types width=90% height=60%}</span><br></pre></td></tr></tbody></table></figure>
+<p>The % unit is generally relative to some available space. For example the above example will render to the following.</p>
+<p><code>– LaTeX: \includegraphics[width=0.5\textwidth,height=\textheight]{file.jpg}</code></p>
+<p>(If you’re using a custom template, you need to conﬁgure graphicx as in the default template.)</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">For immediate example, see @fig:figure0</span><br><span class="line"></span><br><span class="line">![Figure Caption](img1.jpg){#fig:figure0}</span><br><span class="line"></span><br><span class="line">reference it as [Fig. @fig:figure0] will show Fig. 1</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="incremental-lists-beamer">Incremental lists (beamer)</h5>
+<p>If you want a particular list to depart from the default, put it in a div block with class incremental or nonincremental. So, for example, using the fenced div syntax, the following would be incremental regardless of the document default:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">::: incremental</span><br><span class="line"></span><br><span class="line">- Eat spaghetti</span><br><span class="line"></span><br><span class="line">- Drink wine</span><br><span class="line"></span><br><span class="line">:::</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line"></span><br><span class="line">::: nonincremental</span><br><span class="line"></span><br><span class="line">- Eat spaghetti</span><br><span class="line">- Drink wine</span><br><span class="line"></span><br><span class="line">:::</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="fenced-divs">fenced divs</h5>
+<p>Allow special fenced syntax for native Div blocks. A Div starts with a fence containing at least three consecutive colons plus some attributes. The attributes may optionally be followed by another string of consecutive colons. The fenced Div should be separated by blank lines from preceding and following blocks.</p>
+<div id="special" class="sidebar">
+<p>Here is a paragraph.</p>
+<p>And another.</p>
+</div>
+<p>With the following source:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">::::: {#special .sidebar} </span><br><span class="line">Here is a paragraph.</span><br><span class="line"></span><br><span class="line">And another. </span><br><span class="line">:::::</span><br></pre></td></tr></tbody></table></figure>
+<p>Fenced divs can be nested. Opening fences are distinguished because they must have attributes:</p>
+<div class="Warning">
+<p>This is a warning.</p>
+<p>::: Danger This is a warning within a warning.</p>
+</div>
+<p>::::::::::::::::::</p>
+<p>With the following source:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">::: Warning :::::: </span><br><span class="line">This is a warning.</span><br><span class="line"></span><br><span class="line">::: Danger This is a warning within a warning. </span><br><span class="line">:::</span><br><span class="line"></span><br><span class="line">::::::::::::::::::</span><br></pre></td></tr></tbody></table></figure>
+<h5 id="footnotes">footnotes</h5>
+<p>Inline footnotes are also allowed (though, unlike regular notes, they cannot contain multiple paragraphs). The syntax is as follows:</p>
+<p>Here is an inline note. <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<h5 id="citations">citations</h5>
+<p>Citation <span class="citation" data-cites="agarwal_neural_2020">[@agarwal_neural_2020]</span> and multiple author <span class="citation" data-cites="alguliev_multiple_2013 allahyari_text_2017 anchieta_sema_2019">[@alguliev_multiple_2013; @allahyari_text_2017; @anchieta_sema_2019]</span>. Should work.</p>
+<p>And <del>some</del> more texts. Also in text citation <span class="citation" data-cites="anchieta_sema_2019">[@anchieta_sema_2019]</span> says something.</p>
+<p>Separate multiple citations using ;</p>
+<p>Also, add -C or —citeproc as an argument.</p>
+<h5 id="multicolumns">multicolumns</h5>
+<p>See this <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jdutant/columns">github doc</a>.</p>
+<h3 id="pandoc-filter-pandoc-crossref">Pandoc Filter pandoc crossref</h3>
+<h5 id="some-documentation-links">Some documentation links</h5>
+<p>This is the official doc: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://lierdakil.github.io/pandoc-crossref/#image-labels">pandoc-crossref(1) | pandoc-crossref</a>.</p>
+<h4 id="figures-and-subfigures">Figures and Subfigures</h4>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![Caption](file.ext){#fig:label width=30%}</span><br><span class="line">then refer to it as @Fig:test3, @fig:test3, or [@Fig:test3]. shows fig. or Fig. #.</span><br><span class="line">latex reference also works \ref{fig:test3} and it only shows a number.</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id="fig:coolFig"&gt;</span><br><span class="line">![caption a](coolfiga.png){#fig:cfa width=30%}</span><br><span class="line">![caption b](coolfigb.png){#fig:cfb width=60%}</span><br><span class="line">![caption c](coolfigb.png){#fig:cfc width=10%}</span><br><span class="line"></span><br><span class="line">![caption d](coolfigd.png){#fig:cfd}</span><br><span class="line">![caption e](coolfige.png){#fig:cfe}</span><br><span class="line">![caption f](coolfigf.png){#fig:cff}</span><br><span class="line"></span><br><span class="line">Cool figure!</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="reference-to-sections-in-the-same-file">Reference to sections in the same file</h3>
+<p>Refer to Examples subsection <a href="#examples">example no crossref</a>.</p>
+<p>This refers to <a href="#sec_examples">examples with lable</a> section.,</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-agarwal_neural_2020" class="csl-entry" role="doc-biblioentry">
+Agarwal, Rishabh, Nicholas Frosst, Xuezhou Zhang, Rich Caruana, and Geoffrey E Hinton. 2020. <span>“Neural Additive Models: Interpretable Machine Learning with Neural Nets.”</span> <em><span>arXiv</span> Preprint <span>arXiv</span>:2004.13912</em>. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://arxiv.org/pdf/2004.13912">https://arxiv.org/pdf/2004.13912</a>.
+</div>
+<div id="ref-alguliev_multiple_2013" class="csl-entry" role="doc-biblioentry">
+Alguliev, Rasim M., Ramiz M. Aliguliyev, and Nijat R. Isazade. 2013. <span>“Multiple Documents Summarization Based on Evolutionary Optimization Algorithm.”</span> <em>Expert Systems with Applications</em> 40 (5): 1675–89. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://doi.org/10.1016/j.eswa.2012.09.014">https://doi.org/10.1016/j.eswa.2012.09.014</a>.
+</div>
+<div id="ref-allahyari_text_2017" class="csl-entry" role="doc-biblioentry">
+Allahyari, Mehdi, Seyedamin Pouriyeh, Mehdi Assefi, Saeid Safaei, Elizabeth D. Trippe, Juan B. Gutierrez, and Krys Kochut. 2017. <span>“Text Summarization Techniques: A Brief Survey.”</span> <em><span>arXiv</span></em>, 1707.02268v3. <a target="_blank" rel="noopener external nofollow noreferrer" href="http://arxiv.org/abs/1707.02268v3">http://arxiv.org/abs/1707.02268v3</a>.
+</div>
+<div id="ref-anchieta_sema_2019" class="csl-entry" role="doc-biblioentry">
+Anchieta, Rafael T., Marco A. S. Cabezudo, and Thiago A. S. Pardo. 2019. <span>“<span>SEMA</span>: An Extended Semantic Evaluation Metric for <span>AMR</span>.”</span> <em><span>arXiv</span></em>, 1905.12069v1. <a target="_blank" rel="noopener external nofollow noreferrer" href="http://arxiv.org/abs/1905.12069v1">http://arxiv.org/abs/1905.12069v1</a>.
+</div>
+</div>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1" role="doc-endnote"><p>implicite footnote<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>this is f1 footnote.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Inlines notes are easier to write, since you don't have to pick an identifier and move down to type the note.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/reading-notes/tags/sample/">sample</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/reading-notes/samples/SubFolder/math_test/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2021/09/09/04/38/binary-6609473_1280.jpg" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Math Equations Test</div></div></a></div><div class="next-post pull-right"><a href="/reading-notes/samples/SubFolder/check-attachements/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2021/09/09/04/38/binary-6609473_1280.jpg" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Check Attachments</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/reading-notes/samples/ins_hexo_setup/" title="Hexo Setup Instructions"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2021/09/09/04/38/binary-6609473_1280.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-01</div><div class="title">Hexo Setup Instructions</div></div></a></div><div><a href="/reading-notes/samples/SubFolder/butterfly_markdown_example-01/" title="Butterfly Markdown Example (1)"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-01</div><div class="title">Butterfly Markdown Example (1)</div></div></a></div><div><a href="/reading-notes/samples/SubFolder/markmap_test/" title="Markmap Test"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_1280.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-01</div><div class="title">Markmap Test</div></div></a></div><div><a href="/reading-notes/samples/SubFolder/hexo_stats_chart/" title="Posts Statistics Example"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-01</div><div class="title">Posts Statistics Example</div></div></a></div><div><a href="/reading-notes/samples/SubFolder/math_test/" title="Math Equations Test"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2021/09/09/04/38/binary-6609473_1280.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-01</div><div class="title">Math Equations Test</div></div></a></div><div><a href="/reading-notes/samples/SubFolder/check-attachements/" title="Check Attachments"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2021/09/09/04/38/binary-6609473_1280.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-01</div><div class="title">Check Attachments</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#pandoc-general-howto"><span class="toc-number">1.</span> <span class="toc-text">Pandoc General Howto</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#my-pandoc-pdf-latex-workflow"><span class="toc-number">1.1.</span> <span class="toc-text">My Pandoc pdf latex workflow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#memo"><span class="toc-number">1.2.</span> <span class="toc-text">Memo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#some-links-to-tutorials"><span class="toc-number">1.3.</span> <span class="toc-text">Some links to tutorials</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sec_examples"><span class="toc-number">1.4.</span> <span class="toc-text">Examples</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#pandoc-command-examples"><span class="toc-number">1.4.1.</span> <span class="toc-text">pandoc command examples</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#metadata-ymal"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">Metadata ymal</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#beamer-commands-examples"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">Beamer commands examples</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#make-pdf-books"><span class="toc-number">1.4.2.</span> <span class="toc-text">Make pdf books</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#include-sub-files"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">Include sub files</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#markdown-testing-1"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">Markdown Testing 1</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#usage-basics"><span class="toc-number">1.5.</span> <span class="toc-text">Usage Basics</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#metadata"><span class="toc-number">1.5.0.1.</span> <span class="toc-text">Metadata</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#input-output--o--s"><span class="toc-number">1.5.0.2.</span> <span class="toc-text">Input output, -o -s</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#from-to"><span class="toc-number">1.5.0.3.</span> <span class="toc-text">From to</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#create-pdf"><span class="toc-number">1.5.0.4.</span> <span class="toc-text">Create PDF</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#data-directory"><span class="toc-number">1.5.0.5.</span> <span class="toc-text">Data directory</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#suppress-warning-messages"><span class="toc-number">1.5.0.6.</span> <span class="toc-text">Suppress warning messages</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#shift-document-heading"><span class="toc-number">1.5.0.7.</span> <span class="toc-text">Shift document heading</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ignore-empty-paragraphs"><span class="toc-number">1.5.0.8.</span> <span class="toc-text">Ignore empty paragraphs</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#filters"><span class="toc-number">1.5.0.9.</span> <span class="toc-text">filters</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#metadata-key-value"><span class="toc-number">1.5.0.10.</span> <span class="toc-text">Metadata key value</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#extract-media"><span class="toc-number">1.5.0.11.</span> <span class="toc-text">Extract media</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#table-of-contents-depth"><span class="toc-number">1.5.0.12.</span> <span class="toc-text">Table of contents depth</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#code-highlight-style"><span class="toc-number">1.5.0.13.</span> <span class="toc-text">Code highlight style</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#top-level-dividion"><span class="toc-number">1.5.0.14.</span> <span class="toc-text">Top level dividion</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#number-sections"><span class="toc-number">1.5.0.15.</span> <span class="toc-text">Number sections</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#slide-level-beamer-etc"><span class="toc-number">1.5.0.16.</span> <span class="toc-text">Slide level beamer, etc</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ipynb-output"><span class="toc-number">1.5.0.17.</span> <span class="toc-text">Ipynb output</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#template"><span class="toc-number">1.5.0.18.</span> <span class="toc-text">Template</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#headings-unnumbered"><span class="toc-number">1.5.0.19.</span> <span class="toc-text">Headings unnumbered</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#rebase-relative-paths"><span class="toc-number">1.5.0.20.</span> <span class="toc-text">Rebase relative paths</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#citations-in-note-style"><span class="toc-number">1.5.0.21.</span> <span class="toc-text">Citations in note style</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#link-citations"><span class="toc-number">1.5.0.22.</span> <span class="toc-text">link citations</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pandoc-markdown"><span class="toc-number">1.6.</span> <span class="toc-text">Pandoc Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#lists"><span class="toc-number">1.6.0.1.</span> <span class="toc-text">lists</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#task-lists"><span class="toc-number">1.6.0.2.</span> <span class="toc-text">Task lists</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#definition-lists"><span class="toc-number">1.6.0.3.</span> <span class="toc-text">Definition lists</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#example-lists"><span class="toc-number">1.6.0.4.</span> <span class="toc-text">Example lists</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#verbatim"><span class="toc-number">1.6.0.5.</span> <span class="toc-text">verbatim</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#shortcut-reference-links"><span class="toc-number">1.6.0.6.</span> <span class="toc-text">shortcut reference links</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#internal-links"><span class="toc-number">1.6.0.7.</span> <span class="toc-text">internal links</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#images"><span class="toc-number">1.6.0.8.</span> <span class="toc-text">images</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#image-links"><span class="toc-number">1.6.0.9.</span> <span class="toc-text">Image links</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#incremental-lists-beamer"><span class="toc-number">1.6.0.10.</span> <span class="toc-text">Incremental lists (beamer)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#fenced-divs"><span class="toc-number">1.6.0.11.</span> <span class="toc-text">fenced divs</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#footnotes"><span class="toc-number">1.6.0.12.</span> <span class="toc-text">footnotes</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#citations"><span class="toc-number">1.6.0.13.</span> <span class="toc-text">citations</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#multicolumns"><span class="toc-number">1.6.0.14.</span> <span class="toc-text">multicolumns</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pandoc-filter-pandoc-crossref"><span class="toc-number">1.7.</span> <span class="toc-text">Pandoc Filter pandoc crossref</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#some-documentation-links"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">Some documentation links</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#figures-and-subfigures"><span class="toc-number">1.7.1.</span> <span class="toc-text">Figures and Subfigures</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reference-to-sections-in-the-same-file"><span class="toc-number">1.8.</span> <span class="toc-text">Reference to sections in the same file</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/reading-notes/js/utils.js"></script><script src="/reading-notes/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/reading-notes/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script></div></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
