@@ -1,0 +1,410 @@
+<!DOCTYPE html><html class="hide-aside" lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>cq_docker | ReadingNotes</title><meta name="keywords" content="docker"><meta name="author"><meta name="copyright"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Docker Overview Docker overview | Docker Documentation Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrast">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cq_docker">
+<meta property="og:url" content="https://bzhao2718.github.io/reading-notes/cqNotes/InterviewPrep/cq_docker/index.html">
+<meta property="og:site_name" content="ReadingNotes">
+<meta property="og:description" content="Docker Overview Docker overview | Docker Documentation Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrast">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png">
+<meta property="article:published_time" content="2021-01-01T17:53:22.000Z">
+<meta property="article:modified_time" content="2021-11-25T22:05:49.938Z">
+<meta property="article:tag" content="docker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2016/03/17/23/07/abstract-1264071_1280.png"><link rel="shortcut icon" href="/reading-notes/img/favicon.png"><link rel="canonical" href="https://bzhao2718.github.io/reading-notes/cqNotes/InterviewPrep/cq_docker/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/reading-notes/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/reading-notes/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'cq_docker',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-11-25 16:05:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script async src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/carousel-touch.min.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/archives/"><div class="headline">Articles</div><div class="length-num">73</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/tags/"><div class="headline">Tags</div><div class="length-num">16</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/categories/"><div class="headline">Categories</div><div class="length-num">9</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/reading-notes/">ReadingNotes</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">cq_docker</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-01-01T17:53:22.000Z" title="Created 2021-01-01 11:53:22">2021-01-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-11-25T22:05:49.938Z" title="Updated 2021-11-25 16:05:49">2021-11-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>12min</span></span></div></div></div><article class="post-content" id="article-container"><h2 id="docker-overview">Docker Overview</h2>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://docs.docker.com/get-started/overview/">Docker overview | Docker Documentation</a></p>
+<p>Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.</p>
+<p>Docker provides the ability to package and run an application in a loosely isolated environment called a container. The isolation and security allow you to run many containers simultaneously on a given host. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host. You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.</p>
+<p>Docker streamlines the development lifecycle by allowing developers to work in standardized environments using local containers which provide your applications and services. Containers are great for continuous integration and continuous delivery (CI/CD) workflows.</p>
+<h3 id="docker-architecture">Docker Architecture</h3>
+<p>Docker uses a client-server architecture. The Docker <em>client</em> talks to the Docker <em>daemon</em>, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon <em>can</em> run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://docs.docker.com/engine/images/architecture.svg" alt="Docker Architecture Diagram"></p>
+<h3 id="the-docker-daemon">The Docker daemon</h3>
+<p>The Docker daemon (<code>dockerd</code>) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.</p>
+<h3 id="the-docker-client">The Docker client</h3>
+<p>The Docker client (<code>docker</code>) is the primary way that many Docker users interact with Docker. When you use commands such as <code>docker run</code>, the client sends these commands to <code>dockerd</code>, which carries them out. The <code>docker</code>command uses the Docker API. The Docker client can communicate with more than one daemon.</p>
+<h3 id="docker-registries">Docker registries</h3>
+<p>A Docker <em>registry</em> stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.</p>
+<p>When you use the <code>docker pull</code> or <code>docker run</code> commands, the required images are pulled from your configured registry. When you use the <code>docker push</code> command, your image is pushed to your configured registry.</p>
+<h3 id="docker-objects">Docker objects</h3>
+<p>When you use Docker, you are creating and using images, containers, networks, volumes, plugins, and other objects. This section is a brief overview of some of those objects.</p>
+<h4 id="images">Images</h4>
+<p>An <em>image</em> is a read-only template with instructions for creating a Docker container. Often, an image is <em>based on</em> another image, with some additional customization. For example, you may build an image which is based on the <code>ubuntu</code>image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.</p>
+<p>You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a <em>Dockerfile</em> with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image. When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt. This is part of what makes images so lightweight, small, and fast, when compared to other virtualization technologies.</p>
+<h4 id="containers">Containers</h4>
+<p>A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.</p>
+<p>By default, a container is relatively well isolated from other containers and its host machine. You can control how isolated a container’s network, storage, or other underlying subsystems are from other containers or from the host machine.</p>
+<p>A container is defined by its image as well as any configuration options you provide to it when you create or start it. When a container is removed, any changes to its state that are not stored in persistent storage disappear.</p>
+<h2 id="docker-tutorial">Docker Tutorial</h2>
+<ol type="1">
+<li>Clone</li>
+</ol>
+<p>The <em>Getting Started</em> project is a simple GitHub repository which contains everything you need to build an image and run it as a container.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run --name repo alpine/git clone https://github.com/docker/getting-started.git</span><br><span class="line">docker cp repo:/git/getting-started/ .</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2" type="1">
+<li>Build</li>
+</ol>
+<p>Now, build the image. A docker image is a private file system just for your container. It provides all the files and code your container needs.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd gettting-started</span><br><span class="line">docker build -t docker101tutorial .</span><br></pre></td></tr></tbody></table></figure>
+<ol start="3" type="1">
+<li>Run your first container</li>
+</ol>
+<p>Start a container based on the image you built in the previous step. Running a container launches your application with private resources, securely isolated from the rest of your machine.</p>
+<ol start="4" type="1">
+<li>Share.</li>
+</ol>
+<h2 id="concepts">Concepts</h2>
+<p>Now save and share your image. Save and share your image on Docker Hub to enable other users to easily download and run the image on any destination machine.</p>
+<p>Now that you've run a container, what <em>is</em> a container? Simply put, a container is simply another process on your machine that has been isolated from all other processes on the host machine. That isolation leverages <a target="_blank" rel="noopener external nofollow noreferrer" href="https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504">kernel namespaces and cgroups</a>, features that have been in Linux for a long time. Docker has worked to make these capabilities approachable and easy to use.</p>
+<p>When running a container, it uses an isolated filesystem. This custom filesystem is provided by a <strong>container image</strong>. Since the image contains the container's filesystem, it must contain everything needed to run an application - all dependencies, configuration, scripts, binaries, etc. The image also contains other configuration for the container, such as environment variables, a default command to run, and other metadata.</p>
+<h2 id="tutorial-java">Tutorial Java</h2>
+<h3 id="build-images">build images</h3>
+<p>Now that our application is running properly, let’s take a look at creating a Dockerfile.</p>
+<p>A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. When we tell Docker to build our image by executing the docker build command, Docker reads these instructions and execute them sequentially and creates a Docker image. The COPY command takes two parameters. The first parameter tells Docker what file(s) you would like to copy into the image. The second parameter tells Docker where you want that file(s) to be copied to.</p>
+<p>At this point, we have an Alpine version 3.13 image that is based on OpenJDK version 16, and we have also installed our dependencies. The next thing we need to do is to add our source code into the image. We’ll use the COPY command just like we did with our pom.xml file above.</p>
+<p>'''bash</p>
+<h1 id="syntaxdockerdockerfile1">syntax=docker/dockerfile:1</h1>
+<p>FROM openjdk:16-alpine3.13</p>
+<p>WORKDIR /app</p>
+<p>COPY .mvn/ .mvn COPY mvnw pom.xml ./ RUN ./mvnw dependency:go-offline</p>
+<p>COPY src ./src</p>
+<p>CMD ["./mvnw", "spring-boot:run"]</p>
+<p>'''</p>
+<p>Now that we’ve created our Dockerfile, let’s build our image. To do this, we use the docker build command. The docker build command builds Docker images from a Dockerfile and a “context”. A build’s context is the set of files located in the specified PATH or URL. The Docker build process can access any of the files located in this context.</p>
+<p>The build command optionally takes a --tag flag. The tag is used to set the name of the image and an optional tag in the format name:tag.</p>
+<p>An image is made up of a manifest and a list of layers. ### run your images as a container</p>
+<p>In the previous module, we created our sample application and then we created a Dockerfile that we used to build an image. We created our image using the command docker build. Now that we have an image, we can run that image and see if our application is running correctly.</p>
+<p>A container is a normal operating system process except that this process is isolated and has its own file system, its own networking, and its own isolated process tree separated from the host.</p>
+<p>To run an image inside a container, we use the docker run command. The docker ps command provides a bunch of information about our running containers. We can see the container ID, the image running inside the container, the command that was used to start the container, when it was created, the status, ports that exposed and the name of the container. Let’s restart the container that we just stopped. Locate the name of the container we just stopped and replace the name of the container below using the restart command. The standard practice is to name your containers for the simple reason that it is easier to identify what is running in the container and what application or service it is associated with.</p>
+<p>To name a container, we just need to pass the --name flag to the docker run command. ''' docker run --rm -d -p 8080:8080 --name springboot-server java-docker ''' ### use containers for development In this module, we’ll walk through setting up a local development environment for the application we built in the previous modules. We’ll use Docker to build our images and Docker Compose to make everything a whole lot easier. First, we’ll take a look at running a database in a container and how we use volumes and networking to persist our data and allow our application to talk with the database. Then we’ll pull everything together into a Compose file which allows us to setup and run a local development environment with one command. Finally, we’ll take a look at connecting a debugger to our application running inside a container</p>
+<p>Another really cool feature of using a Compose file is that we have service resolution set up to use the service names. Therefore, we are now able to use mysqlserver in our connection string. The reason we use mysqlserver is because that is what we’ve named our MySQL service as in the Compose file. ''' version: '3.8' services: petclinic: build: context: . ports: - 8000:8000 - 8080:8080 environment: - SERVER_PORT=8080 - MYSQL_URL=jdbc:mysql://mysqlserver/petclinic volumes: - ./:/app command: ./mvnw spring-boot:run -Dspring-boot.run.profiles=mysql -Dspring-boot.run.jvmArguments="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"</p>
+<p>mysqlserver: image: mysql:8.0.23 ports: - 3306:3306 environment: - MYSQL_ROOT_PASSWORD= - MYSQL_ALLOW_EMPTY_PASSWORD=true - MYSQL_USER=petclinic - MYSQL_PASSWORD=petclinic - MYSQL_DATABASE=petclinic volumes: - mysql_data:/var/lib/mysql - mysql_config:/etc/mysql/conf.d volumes: mysql_data: mysql_config: '''</p>
+<p>Now, to start our application and to confirm that it is running properly. ''' docker-compose -f docker-compose.dev.yml up --build ''' We pass the --build flag so Docker will compile our image and then starts the containers. ### run tests</p>
+<p>We can improve this slightly by using a RUN statement instead of the CMD statement in the test stage. The CMD statement is not executed during the building of the image, but is executed when you run the image in a container. When using the RUN statement, our tests run when the building the image, and stop the build when they fail</p>
+<script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/reading-notes/tags/docker/">docker</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/reading-notes/cqNotes/InterviewPrep/cq_data_science_interview/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_1280.jpg" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">cq_data_science_interview</div></div></a></div><div class="next-post pull-right"><a href="/reading-notes/cqNotes/ML/cq_cnn_intro/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.pixabay.com/photo/2012/10/29/15/38/binary-code-63529_1280.jpg" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">cq_cnn_intro</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-overview"><span class="toc-number">1.</span> <span class="toc-text">Docker Overview</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-architecture"><span class="toc-number">1.1.</span> <span class="toc-text">Docker Architecture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#the-docker-daemon"><span class="toc-number">1.2.</span> <span class="toc-text">The Docker daemon</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#the-docker-client"><span class="toc-number">1.3.</span> <span class="toc-text">The Docker client</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-registries"><span class="toc-number">1.4.</span> <span class="toc-text">Docker registries</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-objects"><span class="toc-number">1.5.</span> <span class="toc-text">Docker objects</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#images"><span class="toc-number">1.5.1.</span> <span class="toc-text">Images</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#containers"><span class="toc-number">1.5.2.</span> <span class="toc-text">Containers</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-tutorial"><span class="toc-number">2.</span> <span class="toc-text">Docker Tutorial</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#concepts"><span class="toc-number">3.</span> <span class="toc-text">Concepts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tutorial-java"><span class="toc-number">4.</span> <span class="toc-text">Tutorial Java</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#build-images"><span class="toc-number">4.1.</span> <span class="toc-text">build images</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#syntaxdockerdockerfile1"><span class="toc-number"></span> <span class="toc-text">syntax&#x3D;docker&#x2F;dockerfile:1</span></a></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/reading-notes/js/utils.js"></script><script src="/reading-notes/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/reading-notes/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script></div></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
