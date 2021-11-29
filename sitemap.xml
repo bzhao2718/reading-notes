@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-02/</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-02%20(conflicted)/</loc>
+    
+    <lastmod>2021-11-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-05/</loc>
+    
+    <lastmod>2021-11-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-04/</loc>
+    
+    <lastmod>2021-11-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_naive_bayes/</loc>
     
     <lastmod>2021-11-26</lastmod>
@@ -192,6 +220,13 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/samples/SubFolder/hexo-plugin-demo-02/</loc>
+    
+    <lastmod>2021-11-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/samples/SubFolder/hexo-plugin-demo-03/</loc>
     
     <lastmod>2021-11-26</lastmod>
     
@@ -450,13 +485,6 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-02/</loc>
-    
-    <lastmod>2021-11-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-01/</loc>
     
     <lastmod>2021-11-25</lastmod>
@@ -543,7 +571,7 @@
 
   <url>
     <loc>https://bzhao2718.github.io/reading-notes</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -551,112 +579,112 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/sample/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/software-dev/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/java/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/data-science/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/spring/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/docker/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/ml-math/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/lin-algebra/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/info-theory/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/ml-cnn/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/calculus/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/python/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/dev-tool/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/pytorch/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/reading-notes/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/dev-project/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -665,63 +693,63 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/Sample/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/ML/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/LinAlgebra/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/Calculus/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLFramework/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLFramework/Pytorch/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/SoftwareDev/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/SoftwareDev/Project/</loc>
-    <lastmod>2021-11-26</lastmod>
+    <lastmod>2021-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
