@@ -1,3 +1,7 @@
+### **2021-12** (1)  
+- 2021-12-06 [pd_svm_01](https://bzhao2718.github.io/reading-notes/cqNotes/PostDraft/ML/pd-svm-01/)  
+  
+  
 ### **2021-11** (13)  
 - 2021-11-28 [data-structure-also-05](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-05/)  
 - 2021-11-28 [data-structure-algo-04](https://bzhao2718.github.io/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-04/)  
@@ -69,6 +73,15 @@
 - 2021-01-01 [cq_pytorch_examples](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cq_pytorch_examples/)  
 - 2021-01-01 [cqm_pytorch_examples_202011](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cqm_pytorch_examples_202011/)  
 - 2021-01-01 [cq_pytorch_intro_202011](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cq_pytorch_intro_202011/)  
+  
+  
+### **2020-02** (6)  
+- 2020-02-01 [Speaking Notes (01)](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-speaking-notes-01/)  
+- 2020-02-01 [en_notes_01](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-notes-01/)  
+- 2020-02-01 [en_writing_notes_02](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-writing-notes-02/)  
+- 2020-02-01 [en_notes_02](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-notes-02/)  
+- 2020-02-01 [en_speaking_notes_02](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-speaking-notes-02/)  
+- 2020-02-01 [en_writing_notes_01](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-writing-notes-01/)  
   
   
 ### **2020-01** (12)  
