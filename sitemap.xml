@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/index.html</loc>
+    
+    <lastmod>2022-06-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E5%85%B3%E8%81%94%E6%80%A7%E8%B0%AC%E8%AF%AF/</loc>
     
     <lastmod>2022-06-07</lastmod>
@@ -612,13 +619,6 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ML/cq_loss_function/</loc>
-    
-    <lastmod>2021-11-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/index.html</loc>
     
     <lastmod>2021-11-25</lastmod>
     
