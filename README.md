@@ -58,8 +58,8 @@
 - 2021-01-01 [cq_data_science](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_data_science/)  
 - 2021-01-01 [cq_decision_tree](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_decision_tree/)  
 - 2021-01-01 [cq_dim_reduction](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_dim_reduction/)  
-- 2021-01-01 [cq_ensemble_methods](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_ensemble_methods/)  
 - 2021-01-01 [cq_knn](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_knn/)  
+- 2021-01-01 [cq_ensemble_methods](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_ensemble_methods/)  
 - 2021-01-01 [cq_naive_bayes](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_naive_bayes/)  
 - 2021-01-01 [cq_pca](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_pca/)  
 - 2021-01-01 [cq_performance_metrics](https://bzhao2718.github.io/reading-notes/cqNotes/DataScience/cq_performance_metrics/)  
@@ -82,16 +82,16 @@
 - 2021-01-01 [cq_pytorch_cheatsheet](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cq_pytorch_cheat%20sheet/)  
 - 2021-01-01 [cq_pytorch_contiguous vs non-contiguous arrays](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cq_pytorch_contiguous%20vs%20non-contiguous%20arrays/)  
 - 2021-01-01 [cq_pytorch_examples](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cq_pytorch_examples/)  
-- 2021-01-01 [cqm_pytorch_examples_202011](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cqm_pytorch_examples_202011/)  
 - 2021-01-01 [cq_pytorch_intro_202011](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cq_pytorch_intro_202011/)  
+- 2021-01-01 [cqm_pytorch_examples_202011](https://bzhao2718.github.io/reading-notes/cqNotes/ML/Pytorch/cqm_pytorch_examples_202011/)  
   
   
 ### **2020-02** (6)  
 - 2020-02-01 [Speaking Notes (01)](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-speaking-notes-01/)  
 - 2020-02-01 [en_notes_01](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-notes-01/)  
 - 2020-02-01 [en_notes_02](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-notes-02/)  
-- 2020-02-01 [en_speaking_notes_02](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-speaking-notes-02/)  
 - 2020-02-01 [en_writing_notes_01](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-writing-notes-01/)  
+- 2020-02-01 [en_speaking_notes_02](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-speaking-notes-02/)  
 - 2020-02-01 [en_writing_notes_02](https://bzhao2718.github.io/reading-notes/cqNotes/EnglishNotes/en-writing-notes-02/)  
   
   

@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bzhao2718.github.io/reading-notes/samples/ins_hexo_setup/</loc>
+    
+    <lastmod>2022-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E6%80%9C%E6%82%AF%E8%B0%AC%E8%AF%AF/</loc>
     
     <lastmod>2022-06-09</lastmod>
@@ -66,15 +75,6 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/index.html</loc>
-    
-    <lastmod>2022-06-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/samples/ins_hexo_setup/</loc>
     
     <lastmod>2022-06-09</lastmod>
     
@@ -857,6 +857,13 @@
 
   
   <url>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/sample/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/software-dev/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -865,13 +872,6 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/java/</loc>
-    <lastmod>2022-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/sample/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -997,14 +997,14 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/logicFallacy/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/criticalThinking/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/criticalThinking/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/logicFallacy/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1083,14 +1083,14 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/Algorithms/DataStructure/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/CriticalThinking/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/CriticalThinking/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/Algorithms/DataStructure/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
