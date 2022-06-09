@@ -2,66 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E4%BA%BA%E8%BA%AB%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/index.html</loc>
     
-    <lastmod>2022-06-07</lastmod>
+    <lastmod>2022-06-09</lastmod>
     
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E5%85%B3%E8%81%94%E6%80%A7%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E5%BC%BA%E5%8A%9B%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E5%85%AC%E4%BC%97%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E6%80%9C%E6%82%AF%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E7%A8%BB%E8%8D%89%E4%BA%BA%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-05</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/LogicFallacies/RelevanceFallacies/%E7%86%8F%E9%B2%B1%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-05</lastmod>
-    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/samples/ins_hexo_setup/</loc>
     
-    <lastmod>2022-01-03</lastmod>
+    <lastmod>2022-06-09</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E4%BA%BA%E8%BA%AB%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E5%85%B3%E8%81%94%E6%80%A7%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E5%BC%BA%E5%8A%9B%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E5%85%AC%E4%BC%97%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E6%80%9C%E6%82%AF%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E7%A8%BB%E8%8D%89%E4%BA%BA%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E7%86%8F%E9%B2%B1%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -69,6 +87,8 @@
     
     <lastmod>2022-01-03</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -76,6 +96,8 @@
     
     <lastmod>2022-01-03</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -83,6 +105,8 @@
     
     <lastmod>2022-01-03</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -90,6 +114,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -97,6 +123,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -104,6 +132,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -111,6 +141,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -118,6 +150,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -125,6 +159,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -132,6 +168,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -139,6 +177,8 @@
     
     <lastmod>2021-12-11</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -146,6 +186,8 @@
     
     <lastmod>2021-12-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -153,6 +195,8 @@
     
     <lastmod>2021-11-30</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -160,6 +204,8 @@
     
     <lastmod>2021-11-30</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -167,6 +213,8 @@
     
     <lastmod>2021-11-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -174,6 +222,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -181,6 +231,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -188,6 +240,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -195,6 +249,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -202,6 +258,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -209,6 +267,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -216,6 +276,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -223,6 +285,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -230,6 +294,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -237,6 +303,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -244,6 +312,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -251,6 +321,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -258,6 +330,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -265,6 +339,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -272,6 +348,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -279,6 +357,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -286,6 +366,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -293,6 +375,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -300,6 +384,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -307,6 +393,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -314,6 +402,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -321,6 +411,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -328,6 +420,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -335,6 +429,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -342,6 +438,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -349,6 +447,8 @@
     
     <lastmod>2021-11-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -356,6 +456,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -363,6 +465,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -370,6 +474,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -377,6 +483,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -384,6 +492,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -391,6 +501,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -398,6 +510,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -405,6 +519,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -412,6 +528,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -419,6 +537,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -426,6 +546,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -433,6 +555,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -440,6 +564,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -447,6 +573,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -454,6 +582,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -461,6 +591,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -468,6 +600,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -475,6 +609,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -482,6 +618,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -489,6 +627,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -496,6 +636,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -503,6 +645,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -510,6 +654,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -517,6 +663,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -524,6 +672,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -531,6 +681,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -538,6 +690,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -545,6 +699,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -552,6 +708,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -559,6 +717,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -566,6 +726,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -573,6 +735,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -580,6 +744,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -587,6 +753,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -594,6 +762,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -601,6 +771,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -608,6 +780,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -615,6 +789,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -622,6 +798,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -629,6 +807,8 @@
     
     <lastmod>2021-11-25</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -636,6 +816,8 @@
     
     <lastmod>2021-11-24</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -643,6 +825,8 @@
     
     <lastmod>2021-11-24</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -650,6 +834,8 @@
     
     <lastmod>2021-11-07</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
@@ -657,12 +843,14 @@
     
     <lastmod>2020-01-26</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
 
   <url>
     <loc>https://bzhao2718.github.io/reading-notes</loc>
-    <lastmod>2022-06-08</lastmod>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -670,228 +858,228 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/software-dev/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/java/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/sample/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/data-science/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/docker/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/en/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/docker/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/spring/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/ml-math/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/lin-algebra/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/info-theory/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/ml-cnn/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/calculus/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/python/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/dev-tool/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/pytorch/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/pd-ml/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/algo/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/data-structure/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/reading-notes/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/dev-project/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/Sample/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/ML/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/LinAlgebra/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/Calculus/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/Logic/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLFramework/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/MLFramework/Pytorch/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/SoftwareDev/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/Algorithms/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/SoftwareDev/Project/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/Logic/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/categories/Algorithms/DataStructure/</loc>
-    <lastmod>2022-06-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 </urlset>
