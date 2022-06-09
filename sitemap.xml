@@ -2,34 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E5%85%B3%E8%81%94%E6%80%A7%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E7%86%8F%E9%B2%B1%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E4%BA%BA%E8%BA%AB%E8%B0%AC%E8%AF%AF/</loc>
-    
-    <lastmod>2022-06-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E7%A8%BB%E8%8D%89%E4%BA%BA%E8%B0%AC%E8%AF%AF/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E6%80%9C%E6%82%AF%E8%B0%AC%E8%AF%AF/</loc>
     
     <lastmod>2022-06-09</lastmod>
     
@@ -56,7 +29,34 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E6%80%9C%E6%82%AF%E8%B0%AC%E8%AF%AF/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E8%AF%89%E8%AF%B8%E4%BA%BA%E8%BA%AB%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E7%A8%BB%E8%8D%89%E4%BA%BA%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E7%86%8F%E9%B2%B1%E8%B0%AC%E8%AF%AF/</loc>
+    
+    <lastmod>2022-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/RelevanceFallacies/%E5%85%B3%E8%81%94%E6%80%A7%E8%B0%AC%E8%AF%AF/</loc>
     
     <lastmod>2022-06-09</lastmod>
     
@@ -1003,6 +1003,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/criticalThinking/</loc>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -1083,7 +1090,7 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/Logic-CriticalThinking/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/CriticalThinking/</loc>
     <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
