@@ -986,7 +986,7 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/docker/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/data-science/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1000,6 +1000,13 @@
   </url>
   
   <url>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/docker/</loc>
+    <lastmod>2022-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/spring/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1007,7 +1014,21 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/data-science/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/ml-cnn/</loc>
+    <lastmod>2022-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/info-theory/</loc>
+    <lastmod>2022-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzhao2718.github.io/reading-notes/tags/calculus/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1022,27 +1043,6 @@
   
   <url>
     <loc>https://bzhao2718.github.io/reading-notes/tags/lin-algebra/</loc>
-    <lastmod>2022-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/info-theory/</loc>
-    <lastmod>2022-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/ml-cnn/</loc>
-    <lastmod>2022-06-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzhao2718.github.io/reading-notes/tags/calculus/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1128,14 +1128,14 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/ML/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/ML/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/MLMath/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1163,14 +1163,14 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/MLFramework/Pytorch/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/CriticalThinking/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/CriticalThinking/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/MLFramework/Pytorch/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1191,14 +1191,14 @@
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/SoftwareDev/Project/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/Algorithms/DataStructure/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bzhao2718.github.io/reading-notes/categories/Algorithms/DataStructure/</loc>
+    <loc>https://bzhao2718.github.io/reading-notes/categories/SoftwareDev/Project/</loc>
     <lastmod>2022-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
