@@ -1,3 +1,9 @@
+### **2022-08** (3)  
+- 2022-08-03 [Python 中文笔记 01 - 基础](https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python%20%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0%2001/)  
+- 2022-08-03 [Python 中文笔记 02 - 面向对象编程](https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python%20%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0%2002/)  
+- 2022-08-02 [Python 数据结构与算法分析 Reading Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python-DataStructure-01/)  
+  
+  
 ### **2022-05** (19)  
 - 2022-05-10 [关联性逻辑谬误 （一）](https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/%E5%85%B3%E8%81%94%E6%80%A7%E8%B0%AC%E8%AF%AF01/)  
 - 2022-05-09 [两难谬误](https://bzhao2718.github.io/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/%E4%B8%A4%E9%9A%BE%E8%B0%AC%E8%AF%AF/)  

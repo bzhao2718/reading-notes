@@ -1,0 +1,400 @@
+<!DOCTYPE html><html class="hide-aside" lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Python 数据结构与算法分析 Reading Notes (1) | ReadingNotes</title><meta name="keywords" content="algo,data-structure"><meta name="author"><meta name="copyright"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Problem Solving with Algorithms and Data Structures Using Python, Second Edition Python 数据结构与算法分析 （第 2 版） 这是一个过程抽象的例子。我们并不需要知道平方根究竟是如何计算出来的，而只需要知道计算平方根的函数名是什么以及如何使用它。只要正确地导入模块，便可以认为这个函数会返回 正确的结果。由于其他人">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 数据结构与算法分析 Reading Notes (1)">
+<meta property="og:url" content="https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python-DataStructure-01/index.html">
+<meta property="og:site_name" content="ReadingNotes">
+<meta property="og:description" content="Problem Solving with Algorithms and Data Structures Using Python, Second Edition Python 数据结构与算法分析 （第 2 版） 这是一个过程抽象的例子。我们并不需要知道平方根究竟是如何计算出来的，而只需要知道计算平方根的函数名是什么以及如何使用它。只要正确地导入模块，便可以认为这个函数会返回 正确的结果。由于其他人">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://bzhao2718.github.io/reading-notes/default_cover/neural-network-3816319.svg">
+<meta property="article:published_time" content="2022-08-02T01:02:14.000Z">
+<meta property="article:modified_time" content="2022-08-02T01:38:35.569Z">
+<meta property="article:tag" content="algo">
+<meta property="article:tag" content="data-structure">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bzhao2718.github.io/reading-notes/default_cover/neural-network-3816319.svg"><link rel="shortcut icon" href="/reading-notes/img/favicon.png"><link rel="canonical" href="https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python-DataStructure-01/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/reading-notes/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/reading-notes/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":500},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python 数据结构与算法分析 Reading Notes (1)',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-02 09:38:35'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/carousel-touch.min.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/archives/"><div class="headline">Articles</div><div class="length-num">105</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/tags/"><div class="headline">Tags</div><div class="length-num">22</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/reading-notes/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/reading-notes/">ReadingNotes</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/reading-notes/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/reading-notes/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">Python 数据结构与算法分析 Reading Notes (1)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-08-02T01:02:14.000Z" title="Created 2022-08-02 09:02:14">2022-08-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-08-02T01:38:35.569Z" title="Updated 2022-08-02 09:38:35">2022-08-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/reading-notes/categories/Algorithms/">Algorithms</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/reading-notes/categories/Algorithms/DataStructure/">DataStructure</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>4min</span></span></div></div></div><article class="post-content" id="article-container"><p>Problem Solving with Algorithms and Data Structures Using Python,
+Second Edition</p>
+<p>Python 数据结构与算法分析 （第 2 版）</p>
+<p>这是一个过程抽象的例子。我们并不需要知道平方根究竟是如何计算出来的，而只需要知道计算平方根的函数名是什么以及如何使用它。只要正确地导入模块，便可以认为这个函数会返回
+正确的结果。由于其他人已经实现了平方根问题的解决方案，因此我们只需要知道如何使用该函
+数即可。这有时候也被称为过程的 “黑盒” 视角。我们仅需要描述接口：函数名、所需参数，以
+及返回值。所有的计算细节都被隐藏了起来.</p>
+<p>如前所述，过程抽象将功能的实现细节隐藏起来，从而使用户能从更高的视角来看待功能。
+数据抽象的基本思想与此类似。抽象数据类型（有时简称为
+ADT）从逻辑上描述了如何看待数 据及其对应运算而无须考虑具体实现。</p>
+<p>类都是对数据的构成（状态）以及数据
+能做什么（行为）的描述。由于类的使用者只能看到数据项的状态和行为，因此类与抽象数据类
+型是相似的。在面向对象编程范式中，数据项被称作对象。一个对象就是类的一个实例。</p>
+<p>字符串是零个或多个字母、数字和其他符号的有序集合。这些字母、数字和其他符号被称为
+字符。常量字符串值通过引号（单引号或者双引号均可）与标识符进行区分。</p>
+<p>由于都是异构数据序列，因此元组 (tuple) 与列表非常相似。它们的区别在于，元组和字符串一样是
+不可修改的。元组通常写成由括号包含并且以逗号分隔的一系列值。与序列一样，元组允许之前
+描述的任一操作。</p>
+<p>可以通过键访问其对应的值，也可以向字典添加新的键 –
+值对。访问字典的语法与访问序列
+的语法十分相似，只不过是使用键来访问，而不是下标。添加新值也类似。</p>
+<p>算法需要两个重要的控制结构：迭代和分支。由于 Python
+本身要求强制缩进，因此可以非常容易地看清楚 while 语句的结构。</p>
+<p>列表可以通过使用迭代结构和分支结构来创建。这种方式被称为列表解析式。使用列表解析式，只需一行代码即可创建完成。</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlist = [x*x <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span> (<span class="number">1</span>,<span class="number">11</span>)]</span><br></pre></td></tr></tbody></table></figure>
+<p>程序员也可以使用 raise 语句来触发运行时异常。</p>
+<p>目前还不用实现 performGateLogic
+函数。原因在于，我们不知道每一种逻辑门将如何进
+行自己的逻辑运算。这些细节会交由继承层次结构中的每一个逻辑门来实现。这是一种在面向对
+象编程中非常强大的思想 —— 我们创建了一个方法，而其代码还不存在。参数 self
+是指向实际 调用方法的逻辑门对象的引用。</p>
+<p>前文用 IS-A 关系来描述子类与父类的关系，例如 UnaryGate 是 一个
+LogicGate。Connector 与 LogicGate 是 HAS-A 关系。这意味着连接器内部包含
+LogicGate 类的实例， 但是不在继承层次结构中。在设计类时，区分 IS-A
+关系（需要继承）和 HAS-A 关系（不需要继 承）非常重要。</p>
+<p>计算资源究竟指什么？思考这个问题很重要。有两种思考方式。一是考虑算法在解决问题时
+要占用的空间或内存。解决方案所需的空间总量一般由问题实例本身决定，但算法往往也会有特
+定的空间需求，后文会详细介绍。</p>
+<p>另一种思考方式是根据算法执行所需的时间进行分析和比较。这个指标有时称作算法的执行
+时间或运行时间。</p>
+<p>所以，我们需要更好的方式来描述算法的执行时间。基准测试计算的是执行算法的实际时间。
+这不是一个有用的指标，因为它依赖于特定的计算机、程序、时间、编译器与编程语言。我们希
+望找到一个独立于程序或计算机的指标。</p>
+<p>试图摆脱程序或计算机的影响而描述算法的效率时，量化算法的操作或步骤很重要。如果将
+每一步看成基本计算单位，那么可以将算法的执行时间描述成解决问题所需的步骤数。确定合适
+的基本计算单位很复杂，也依赖于算法的实现。</p>
+<p>数量级函数描述的就是，当 n 增长时，T (n) 增长最
+快的部分。数量级（order of magnitude）常被称作大 O 记法（O 指
+order），记作 O ( f (n)) 。它提 供了步骤数的一个有用的近似方法。</p>
+<p>累加的例子没有体现的一点是，算法的性能有时不仅依赖于问题规模，还依赖于数据值。
+对于这种算法，要用最坏情况、最好情况和普通情况来描述性能。最坏情况指的是某一个数据集
+会让算法的性能极差；另一个数据集可能会让同一个算法的性能极好（最好情况）。大部分情况
+下，算法的性能介于两个极端之间（普通情况）。</p>
+<p>因为运算符出现在两个
+操作数的中间，所以这种表达式被称作中序表达式。这是因为，我们知道 + 和 * 的特
+点。每一个运算符都有一个优先级。</p>
+<h2 id="链表">链表</h2>
+<p>节点（node）是构建链表的基本数据结构。每一个节点对象都必须持有至少两份信息。首先，
+节点必须包含列表元素，我们称之为节点的数据变量。其次，节点必须保存指向下一个节点的引用。</p>
+<script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.7.0/dist/mindmap.min.css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/reading-notes/tags/algo/">algo</a><a class="post-meta__tags" href="/reading-notes/tags/data-structure/">data-structure</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/reading-notes/cqNotes/Python/Python%20%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0%2002/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/reading-notes/default_cover/circles-5444818_1280.png" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Python 中文笔记 02 - 面向对象编程</div></div></a></div><div class="next-post pull-right"><a href="/reading-notes/cqNotes/ObsidianNotes/LogicFallacies/%E5%85%B3%E8%81%94%E6%80%A7%E8%B0%AC%E8%AF%AF01/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/reading-notes/default_cover/trees-6207925_1920.jpg" onerror="onerror=null;src='/reading-notes/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">关联性逻辑谬误 （一）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/reading-notes/cqNotes/SoftwareDev/DataStructureAlgo/data-structure-algo-04/" title="data-structure-algo-04"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/reading-notes/default_cover/trees-6207925_1920.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-28</div><div class="title">data-structure-algo-04</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">链表</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/reading-notes/js/utils.js"></script><script src="/reading-notes/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/reading-notes/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script></div></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
