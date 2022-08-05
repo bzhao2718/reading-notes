@@ -1,6 +1,7 @@
-### **2022-08** (3)  
+### **2022-08** (4)  
 - 2022-08-03 [Python 中文笔记 01 - 基础](https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python%20%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0%2001/)  
 - 2022-08-03 [Python 中文笔记 02 - 面向对象编程](https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python%20%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0%2002/)  
+- 2022-08-03 [Python 中文笔记 03 - 函数，调试，IO](https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python%20%E4%B8%AD%E6%96%87%E7%AC%94%E8%AE%B0%2003/)  
 - 2022-08-02 [Python 数据结构与算法分析 Reading Notes (1)](https://bzhao2718.github.io/reading-notes/cqNotes/Python/Python-DataStructure-01/)  
   
   
